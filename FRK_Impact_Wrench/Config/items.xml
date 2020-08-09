@@ -1,0 +1,99 @@
+<FRK>
+	<insertAfter xpath="/items/item[@name='meleeToolSalvageT2Ratchet']">
+		<item name="meleeToolImpactWrench">
+			<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations,canHaveCosmetic"/>
+			<property name="CustomIcon" value="impactWrench"/>
+			<property name="DisplayType" value="meleeRepairTool"/>
+			<property name="HoldType" value="37"/>
+			<property name="Meshfile" value="#@modfolder:Resources/FRK_Impact_Wrench.unity3d?FRK_Impact_wrench.prefab"/>
+			<property name="TintColor" value="0,80,140"/>
+			<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="CrosshairUpAfterShot" value="true"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="ShowQuality" value="true"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,meleeToolImpactWrenchSchematic"/>
+
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Hitmask_override" value="Melee"/>
+				<property name="UseMeleeCrosshair" value="true"/>
+				<property name="Magazine_items" value="ammoGasCan"/>
+				<property name="Bullet_material" value="metal"/>
+				<property name="Reload_time" value="4.1"/>
+				<property name="Single_magazine_usage" value="true"/>
+				<property name="Infinite_ammo" value="true"/>
+				<property name="Sound_start" value="impactWrench"/>
+				<property name="Sound_empty" value="auger_empty"/>
+				<property name="Sound_reload" value="auger_reload"/>
+				<property name="DamageBonus.wood" value=".25"/>
+				<property name="DamageBonus.earth" value="-0.99"/>
+				<property name="DamageBonus.cloth" value=".25"/>
+				<property name="DamageBonus.stone" value="-0.99"/>
+				<property name="ToolCategory.Disassemble" value="1" param1="1"/>
+				<property name="SupportHarvesting" value="true"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+			
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Delay" value="0.73"/> <!-- Repair actions still need the delay amount -->
+				<property name="Repair_amount" value="200"/>
+				<property name="Upgrade_hit_offset" value="-3"/>
+				<property name="Repair_action_sound" value="impactWrench"/>
+				<property name="Upgrade_action_sound" value="impactWrench"/>
+				<property name="Allowed_upgrade_items" value="resourceScrapIron,resourceForgedIron,resourceForgedSteel"/>
+				<!--<property name="Restricted_upgrade_items" value="concrete"/>-->
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="130"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1000"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2"/>
+				<passive_effect name="BlockRange" operation="base_set" value="5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="12.5"/> <!-- meleeToolWrench -->
+				<passive_effect name="BlockDamage" operation="base_set" value="25"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="200"/> <!-- A16 1.1 -->
+				<passive_effect name="HarvestCount" operation="base_set" value="1.5" tags="salvageHarvest"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="6.2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="2500,6000" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="5" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="0"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="5"/>
+			</effect_group>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="ActionSkillGroup" value="Construction Tools"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+			<property name="RepairExpMultiplier" value="10.8"/>
+			<property name="EconomicValue" value="1000"/>
+		</item>
+	</insertAfter>
+
+	<append xpath="/items">
+		<item name="meleeToolImpactWrenchSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="impactWrench"/>
+			<property name="Unlocks" value="meleeToolImpactWrench"/>
+			<property name="DescriptionKey" value="meleeToolImpactWrenchSchematicDesc"/>
+			<property name="Group" value="frkschCategoryTool"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolImpactWrench" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>	
+	</append>
+</FRK>

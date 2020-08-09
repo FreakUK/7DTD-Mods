@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Impact Wrench" />
+        <Description value="Added an impact wrench for all your wrenching needs." />
+        <Author value="FreakUK" />
+        <Version value="1.2.0" />
+    </ModInfo>
+</xml>

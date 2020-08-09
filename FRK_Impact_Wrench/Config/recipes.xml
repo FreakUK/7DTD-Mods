@@ -1,0 +1,11 @@
+<FRK>
+    <append xpath="/recipes">
+<recipe name="meleeToolImpactWrench" count="1" craft_area="workbench" craft_time="180" tags="learnable,perkSalvageOperations">
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceScrapPolymers" count="50"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+    </append>
+</FRK>

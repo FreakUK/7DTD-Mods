@@ -1,0 +1,367 @@
+<FRK>
+	<insertAfter xpath="/items/item[@name='drinkJarFullRespecAdmin']">
+		<!-- "Unlearns all vanilla books, all vanilla schematics, and returns spent skill points -->
+		<item name="drugAmnesiaAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="255,255,0"/>
+			<property name="TintColor" value="255,255,0"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ResetProgression" reset_books="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="subtract" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#death" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player_death_stinger" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ShowToolbeltMessage" message_key="drinkJarGrandpasForgettingElixirTooltip"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnClubT1BaseballBat" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT1IronSledgehammer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT3SteelSledgehammer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT1HuntingKnife" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3Machete" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBaton" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAxeT1IronFireaxe" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAxeT2SteelAxe" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT1Wrench" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT2Ratchet" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolSalvageT3ImpactDriver" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolFarmT1IronHoe" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolPickT3Auger" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolAxeT3Chainsaw" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSpearT1IronSpear" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT1IronKnuckles" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT3SteelKnuckles" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1WoodenBow" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT3CompoundBow" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1IronCrossbow" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT3CompoundCrossbow" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT1Pistol" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT2Magnum44" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT3DesertVulture" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrel" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT2PumpShotgun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT3AutoShotgun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT3SMG5" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT1AK47" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT2TacticalAR" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT3M60" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifle" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT2MarksmanRifle" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT3SniperRifle" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunExplosivesT3RocketLauncher" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotT1JunkSledge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotT2JunkTurret" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotT3JunkDrone" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorLeatherChest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMilitaryVest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceMilitaryFiber" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorIronChest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorSteelChest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownAmmoPipeBomb" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenadeContact" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownGrenade" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="thrownDynamite" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolRepairT3Nailgun" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidBandage" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalFirstAidKit" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalPlasterCast" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBellows" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolForgeCrucible" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolAnvil" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="cementMixer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="workbench" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="forge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="chemistryStation" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleChassis" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleBicycleHandlebars" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeChassis" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMinibikeHandlebars" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleChassis" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleMotorcycleHandlebars" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicle4x4TruckChassis" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicle4x4TruckAccessories" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterChassis" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vehicleGyroCopterAccessories" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="generatorbank" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="pressureplate" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="vaultDoor03_Powered" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="bladeTrap" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="dartTrap" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="shotgunTurret" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="autoTurret" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electricfencepost" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="motionsensor" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="speaker" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="spotlightPlayer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="switch" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="batterybank" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electrictimerrelay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBarrelExtender" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMuzzleBrake" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunSoundSuppressorSilencer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunLaserSight" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunFlashlight" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeSmall" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeMedium" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunScopeLarge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunReflexSight" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupSemi" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupBurst3" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunTriggerGroupAutomatic" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBipod" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunForegrip" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunRetractingStock" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunDuckbill" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunChoke" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMagazineExtender" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modShotgunSawedOffBarrel" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunCrippleEm" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowPolymerString" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowArrowRest" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeTheHunter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeRadRemover" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunMeleeBlessedMetal" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeTemperedBlade" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeSerratedBlade" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWeightedHead" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeStructuralBrace" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeErgonomicGrip" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeFortifyingGrip" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBarbedWire" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubMetalSpikes" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubMetalChain" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeGraveDigger" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeBunkerBuster" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeIronBreaker" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeWoodSplitter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modMeleeClubBurningShaft" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorInsulatedLiner" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCoolingMesh" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImprovedFittings" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorCustomizedFittings" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingBasic" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorPlatingReinforced" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorStoragePocket" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorDoubleStoragePocket" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorTripleStoragePocket" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorMuffledConnectors" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorAdvancedMuffledConnectors" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorImpactBracing" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorBandolier" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorWaterPurifier" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorHelmetLight" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankSmall" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modFuelTankLarge" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoGasCan" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceOil" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugAntibiotics" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHerbalAntibiotics" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCanSham" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarBeer" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarCoffee" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGoldenRodTea" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasAwesomeSauce" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasLearningElixir" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarGrandpasMoonshine" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkJarRedTea" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkYuccaJuiceSmoothie" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBaconAndEggs" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBakedPotato" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBlueberryPie" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinPie" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinCheesecake" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPumpkinBread" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGumboStew" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodShepardsPie" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodSpaghetti" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodTunaFishGravyToast" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodBoiledMeat" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodChiliDog" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornBread" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornOnTheCob" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodFishTacos" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodGrilledMeat" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHoboStew" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodMeatStew" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodShamChowder" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodSteakAndPotato" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodVegetableStew" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedAloe1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedBlueberry1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedChrysanthemum1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCoffee1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCorn1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCotton1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGoldenrod1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedGraceCorn1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedHop1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedMushroom1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPotato1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedYucca1" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPumpkin1" operation="set" value="0"/>
+			</effect_group>
+		</item>
+		<!-- applies injury debuffs to character for testing purposes -->
+		<item name="drugHurtMeAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="128,0,128"/>
+			<property name="TintColor" value="128,0,128"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#death" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player_death_stinger" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerInfection"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerAbrasion"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerSprainedLeg"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerSprainedArm"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerFatigued"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerBleeding"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerLaceration"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerStun"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerConcussion"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffStatusHungry01"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffStatusThirsty01"/>
+			</effect_group>
+		</item>
+		<!-- applies health debuffs to character for testing purposes -->
+		<item name="drugIpecacAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugIpecacAdmin"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="false"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_drinking"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#death" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player_death_stinger" play_in_head="true"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysentery01Untreated"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-75"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Food" operation="add" value="-75"/>
+			</effect_group>
+		</item>
+		<!-- applies an abrasion for testing purposes -->
+		<item name="drugOuchieAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="0,128,128"/>
+			<property name="TintColor" value="0,128,128"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<effect_group tiered="false">			
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerAbrasion"/>
+			</effect_group>
+		</item>
+		<!-- applies a laceration for testing purposes -->
+		<item name="drugScratchAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="128,128,128"/>
+			<property name="TintColor" value="128,128,128"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<effect_group tiered="false">			
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerLaceration"/>
+			</effect_group>
+		</item>	
+		<!-- applies broken limbs for testing purposes -->
+		<item name="drugCrackAdmin">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugPainkillers"/>
+			<property name="CustomIconTint" value="200,210,220"/>
+			<property name="TintColor" value="200,210,220"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Health/painkillersPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Weight" value="10"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="ShowQuality" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="true"/>
+				<property name="Delay" value="1"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<effect_group tiered="false">			
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerBrokenLeg"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="triggerBrokenArm"/>			
+			</effect_group>
+		</item>		
+	
+	
+	</insertAfter>
+</FRK>

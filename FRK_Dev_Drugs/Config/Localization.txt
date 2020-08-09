@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+drugAmnesiaAdmin,items,Admin,,,"Dev: Amnesia!",,
+drugAmnesiaAdminDesc,items,Admin,,,"Unspend skill points, forget all read books, forget all read schematics!".,,
+drugHurtMeAdmin,items,Admin,,,"Dev: Hurt Me!",,
+drugHurtMeAdminDesc,items,Admin,,,"Apply numerous physical debuffs. Sprained limbs, bleeds, concussion, etc.".,,
+drugIpecacAdmin,items,Admin,,,"Dev: Ipecac!",,
+drugIpecacAdminDesc,items,Admin,,,"Give yourself Dysentary, lose 50 - 60% of your food and water".,,
+drugOuchieAdmin,items,Admin,,,"Dev: Ouchie!",,
+drugOuchieAdminDesc,items,Admin,,,"Give yourself an abrasion!",,
+drugScratchAdmin,items,Admin,,,"Dev: Slice!",,
+drugScratchAdminDesc,items,Admin,,,"Give yourself a laceration!",,
+drugCrackAdmin,items,Admin,,,"Dev: 'Tis but a Scratch!",,
+drugCrackAdminDesc,items,Admin,,,"Break your arm and leg!",,

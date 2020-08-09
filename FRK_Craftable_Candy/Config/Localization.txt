@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+resourceSugar,items,Item,,,Sugar,,
+resourceSugarDesc,items,Item,,,A Sachet of sugar.,,
+yayCandy,items,Item,,,Craftable Candy Schematic,,
+yayCandyDesc,items,Item,,,"Learn how to craft candies!\nNot like you need to worry about diabetes... You'll be dead before that's an issue!",,

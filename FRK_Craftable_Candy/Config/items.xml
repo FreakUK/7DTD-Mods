@@ -1,0 +1,93 @@
+<FRK>
+	<append xpath="/items">
+		<item name="resourceSugar">
+			<property name="Tags" value="food,junk"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceSugar"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="EconomicBundleSize" value="100"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking,Medical"/>
+		</item>
+		<item name="yayCandy">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drugAtomJunkies"/>
+			<property name="Unlocks" value="drugAtomJunkies,drugCovertCats,drugEyeKandy,drugHackers,drugHealthBar,drugJailBreakers,drugNerdTats,drugOhShitzDrops,drugRockBusters,drugSkullCrushers,drugSugarButts"/>
+			<property name="DescriptionKey" value="yayCandyDesc"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugAtomJunkies" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugCovertCats" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugEyeKandy" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHackers" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHealthBar" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugJailBreakers" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugNerdTats" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugOhShitzDrops" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugRockBusters" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSkullCrushers" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSugarButts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- ↓↓ Un-reads the candy schematic - for testing purposes ↓↓ -->
+		<item name="noCandy">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="drugOhShitzDrops"/>
+			<property name="Unlocks" value="drugAtomJunkies,drugCovertCats,drugEyeKandy,drugHackers,drugHealthBar,drugJailBreakers,drugNerdTats,drugOhShitzDrops,drugRockBusters,drugSkullCrushers,drugSugarButts"/>
+			<property name="DescriptionKey" value=""/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugAtomJunkies" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugCovertCats" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugEyeKandy" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHackers" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugHealthBar" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugJailBreakers" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugNerdTats" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugOhShitzDrops" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugRockBusters" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSkullCrushers" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drugSugarButts" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+	<append xpath="/items/item[@name='drugAtomJunkies']">
+		<property name="UnlockedBy" value="perkDemolitionsExpert,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugCovertCats']">
+		<property name="UnlockedBy" value="perkFromTheShadows,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugEyeKandy']">
+		<property name="UnlockedBy" value="perkLuckyLooter,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugHackers']">
+		<property name="UnlockedBy" value="perkSalvageOperations,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugHealthBar']">
+		<property name="UnlockedBy" value="perkPhysician,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugJailBreakers']">
+		<property name="UnlockedBy" value="perkLockPicking,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugNerdTats']">
+		<property name="UnlockedBy" value="perkElectrocutioner,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugOhShitzDrops']">
+		<property name="UnlockedBy" value="perkParkour,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugRockBusters']">
+		<property name="UnlockedBy" value="perkMiner69r,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugSkullCrushers']">
+		<property name="UnlockedBy" value="perkBrawler,yayCandy"/>
+	</append>
+	<append xpath="/items/item[@name='drugSugarButts']">
+		<property name="UnlockedBy" value="perkBetterBarter,yayCandy"/>
+	</append>
+</FRK>

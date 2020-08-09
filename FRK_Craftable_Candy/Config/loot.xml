@@ -1,0 +1,18 @@
+<FRK>
+	<!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
+	<append xpath="/lootcontainers/lootcontainer[@id='8']">
+		<item name="resourceSugar" count="50,100" prob="0.15"/>
+	</append>
+	<!-- Kitchen Cupboards -->
+	<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="resourceSugar" count="50,100" prob="0.15"/>
+	</append>	
+	<!-- Add Candy Schematic to rare foods -->
+	<append xpath="/lootcontainers/lootgroup[@name='rareFoodDrink']">
+		<item name="yayCandy" count="50,100" prob="0.15"/>
+	</append>
+	<!-- Air Drops -->
+	<append xpath="/lootcontainers/lootcontainer[@id='34']">
+		<item name="resourceSugar" count="50,100" prob="0.15"/>
+	</append>
+</FRK>

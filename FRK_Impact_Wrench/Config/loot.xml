@@ -1,0 +1,10 @@
+<FRK>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+		<item name="meleeToolImpactWrenchSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT2']">
+		<item name="meleeToolImpactWrench" loot_prob_template="probT2"/>
+	</append>
+</FRK>

@@ -1,0 +1,4 @@
+<FRK>
+<!--	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/effect_description[@level='5']/@desc_key">Craft Auto Turrets, Chainsaws, Augers, and meleeToolImpactWrenchs.</set>-->		
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,meleeToolImpactWrench</append>
+</FRK>
