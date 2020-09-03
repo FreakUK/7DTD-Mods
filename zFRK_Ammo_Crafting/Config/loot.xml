@@ -1,0 +1,72 @@
+<FRK>
+	<insertAfter xpath="/lootcontainers/lootcontainer/item[@name='resourceBulletCasing']">
+		<item name="resourceBulletCasing9mm" count="50,100"/>
+		<item name="resourceSteelBulletCasing9mm" count="50,100"/>
+		<item name="resourceBulletCasing762mm" count="50,100"/>
+		<item name="resourceSteelBulletCasing762mm" count="50,100"/>
+		<item name="resourceBulletCasing44" count="50,100"/>
+		<item name="resourceSteelBulletCasing44" count="50,100"/>
+		<item name="resourceShotgunCase" count="50,100"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootcontainer/item[@name='resourceBulletTip']">
+		<item name="resourceBulletTip9mm" count="50,100"/>
+		<item name="resourceSteelBulletTip9mm" count="50,100"/>
+		<item name="resourceBulletTip9mmAP" count="50,100"/>
+		<item name="resourceSteelBulletTip9mmAP" count="50,100"/>
+		<item name="resourceBulletTip9mmHP" count="50,100"/>
+		<item name="resourceSteelBulletTip9mmHP" count="50,100"/>
+		<item name="resourceBulletTip762mm" count="50,100"/>
+		<item name="resourceSteelBulletTip762mm" count="50,100"/>
+		<item name="resourceBulletTip762mmAP" count="50,100"/>
+		<item name="resourceSteelBulletTip762mmAP" count="50,100"/>
+		<item name="resourceBulletTip762mmHP" count="50,100"/>
+		<item name="resourceSteelBulletTip762mmHP" count="50,100"/>
+		<item name="resourceBulletTip44" count="50,100"/>
+		<item name="resourceSteelBulletTip44" count="50,100"/>
+		<item name="resourceBulletTip44AP" count="50,100"/>
+		<item name="resourceSteelBulletTip44AP" count="50,100"/>
+		<item name="resourceBulletTip44HP" count="50,100"/>
+		<item name="resourceSteelBulletTip44HP" count="50,100"/>
+		<item name="resourceShotgunSlug" count="50,100"/>
+		<item name="resourceShotgunBreachingSlug" count="50,100"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='resourceBulletCasing']">
+		<item name="resourceBulletCasing9mm" count="50,100"/>
+		<item name="resourceSteelBulletCasing9mm" count="50,100"/>
+		<item name="resourceBulletCasing762mm" count="50,100"/>
+		<item name="resourceSteelBulletCasing762mm" count="50,100"/>
+		<item name="resourceBulletCasing44" count="50,100"/>
+		<item name="resourceSteelBulletCasing44" count="50,100"/>
+		<item name="resourceShotgunCase" count="50,100"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='resourceBulletTip']">
+		<item name="resourceBulletTip9mm" count="50,100"/>
+		<item name="resourceSteelBulletTip9mm" count="50,100"/>
+		<item name="resourceBulletTip9mmAP" count="50,100"/>
+		<item name="resourceSteelBulletTip9mmAP" count="50,100"/>
+		<item name="resourceBulletTip9mmHP" count="50,100"/>
+		<item name="resourceSteelBulletTip9mmHP" count="50,100"/>
+		<item name="resourceBulletTip762mm" count="50,100"/>
+		<item name="resourceSteelBulletTip762mm" count="50,100"/>
+		<item name="resourceBulletTip762mmAP" count="50,100"/>
+		<item name="resourceSteelBulletTip762mmAP" count="50,100"/>
+		<item name="resourceBulletTip762mmHP" count="50,100"/>
+		<item name="resourceSteelBulletTip762mmHP" count="50,100"/>
+		<item name="resourceBulletTip44" count="50,100"/>
+		<item name="resourceSteelBulletTip44" count="50,100"/>
+		<item name="resourceBulletTip44AP" count="50,100"/>
+		<item name="resourceSteelBulletTip44AP" count="50,100"/>
+		<item name="resourceBulletTip44HP" count="50,100"/>
+		<item name="resourceSteelBulletTip44HP" count="50,100"/>
+		<item name="resourceShotgunSlug" count="50,100"/>
+		<item name="resourceShotgunBreachingSlug" count="50,100"/>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="shockRoundSchematic"/>
+		<item name="incendiaryRoundSchematic"/>
+	</append>
+	<remove xpath="/lootcontainers/lootcontainer/item[@name='resourceBulletCasing']"/>
+	<remove xpath="/lootcontainers/lootcontainer/item[@name='resourceBulletTip']"/>
+	<remove xpath="/lootcontainers/lootgroup/item[@name='resourceBulletCasing']"/>
+	<remove xpath="/lootcontainers/lootgroup/item[@name='resourceBulletTip']"/>
+</FRK>

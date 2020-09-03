@@ -1,0 +1,9 @@
+<FRK>
+	<!-- Master Chef -->
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='1,5']/@tags">,FRKCoffeeBlack,FRKCoffeeFoam,FRKCoffeeBlueBerry,FRKCoffeePumpkin,drinkJarIcedTea,drinkJarIcedCoffee,drinkJarBlueberrySlurpy,drinkJarAppleSlurpy,drinkJarPumpkinSlurpy</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,resourceSugar,foodCanBeef,foodCanLamb,foodCanPeas,foodCanPasta,foodCanStock,foodMeatLasagne,foodVegLasagne</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='3,5']/@tags">,foodOmelette,foodApplePie,FRKPureMalk,foodBlueberryPieAlaMode,foodApplePieAlaMode,foodPumpkinPieAlaMode</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='4,5']/@tags">,drinkCanMegaCrush</append>
+	<!-- Advanced Engineering -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='2,5']/@tags">,FRKCoffeeMachine,FRKIceMachine</append>
+</FRK>

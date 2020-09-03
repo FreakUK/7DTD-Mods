@@ -1,0 +1,33 @@
+<FRK>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsRare']">
+		<item name="schematicDeskSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='labEquipment']">
+		<item name="schematicInk"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item name="schematicInk"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='chemistryStationLoot']">
+		<item name="schematicInk"/>
+	</append>	
+
+	<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="schematicInk"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='44']">
+		<!-- File Cabinet -->
+		<item name="schematicInk" prob="0.33"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootcontainer[@id='66']">
+		<!-- Dumpsters -->
+		<item name="schematicInk" prob="0.33"/>
+	</append>
+
+</FRK>

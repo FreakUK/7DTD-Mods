@@ -1,0 +1,528 @@
+<FRK>
+	<append xpath="/items">
+		<item name="shockRoundSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="shock"/>
+			<property name="Unlocks" value="ammo9mmBulletShock"/>
+			<property name="DescriptionKey" value="shockRoundSchematicDesc"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoShotgunShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoArrowShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoCrossbowBoltShock" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<item name="incendiaryRoundSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="flammable"/>
+			<property name="Unlocks" value="ammo44MagnumBulletFire"/>
+			<property name="DescriptionKey" value="incendiaryRoundSchematicDesc"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo44MagnumBulletIncendiary" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo9mmBulletIncendiary" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammo762mmBulletIncendiary" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="ammoShotgunIncendiary" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<!-- Ammo, Elemental -->
+		<item name="ammo9mmBulletIncendiary">
+			<property name="Tags" value="ammo"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="CustomIcon" value="ammo9mmBulletFire"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="UnlockedBy" value="incendiaryRoundSchematic"/>
+			<effect_group name="ammo9mmBulletBall" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Roll" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<display_value name="dExDamageBlock" value="5"/>
+				<display_value name="dExDamageFire" value="250"/>
+				<display_value name="dExRadius" value="3"/>
+				<display_value name="dDuration" value="16"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Refresh" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammo9mmBulletShock">
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="Tags" value="ammo"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="CustomIcon" value="ammo9mmBulletShock"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo9mmBulletBall" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammo44MagnumBulletIncendiary">
+			<property name="Tags" value="ammo"/>
+			<property name="UnlockedBy" value="incendiaryRoundSchematic"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="Explosion.ParticleIndex" value="10"/>
+			<property name="Explosion.RadiusBlocks" value="1"/>
+			<property name="Explosion.RadiusEntities" value="2"/>
+			<property name="Explosion.BlastPower" value="35"/>
+			<property name="Explosion.DamageBonus.stone" value=".1"/>
+			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.DamageBonus.wood" value="6"/>
+			<property name="Explosion.Buff" value="buffBurningMolotov"/>
+			<!-- molotovs have a ExplosiveDamageArea script that runs this buff for their ground effect -->
+			<property name="ExplodeOnHit" value="true"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletFire"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo44MagnumBulletBall" tiered="false">
+				<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Roll" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<display_value name="dExDamageBlock" value="5"/>
+				<display_value name="dExDamageFire" value="250"/>
+				<display_value name="dExRadius" value="3"/>
+				<display_value name="dDuration" value="16"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Refresh" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammo44MagnumBulletShock">
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="Tags" value="ammo"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletShock"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo44MagnumBulletBall" tiered="false">
+				<!-- To split up the revolver and DVulture I'm providing base_set that the specific perk passives can latch on to -->
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammo762mmBulletIncendiary">
+			<property name="Tags" value="ammo"/>
+			<property name="UnlockedBy" value="incendiaryRoundSchematic"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="CustomIcon" value="ammo762mmBulletFire"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo762mmBulletBall" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Roll" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<display_value name="dExDamageBlock" value="5"/>
+				<display_value name="dExDamageFire" value="250"/>
+				<display_value name="dExRadius" value="3"/>
+				<display_value name="dDuration" value="16"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Refresh" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammo762mmBulletShock">
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="Tags" value="ammo"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mbrass"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="300"/>
+			<property name="CustomIcon" value="ammo762mmBulletShock"/>
+			<property name="EconomicValue" value="9"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo762mmBulletBall" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammoShotgunIncendiary">
+			<property name="Tags" value="ammo,shotgun"/>
+			<property name="DisplayType" value="ammoShotgunSlug"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapPolymers"/>
+			<property name="Stacknumber" value="250"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="UnlockedBy" value="incendiaryRoundSchematic"/>
+			<property name="CustomIcon" value="ammoShotgunFire"/>
+			<effect_group name="ammoShotgunSlug" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+				<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkBoomstick"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
+				<display_value name="dTargetPenetration" value="2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkBoomstick"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Roll" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="positionAOE" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="2.7" buff="buffBurningMolotov"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<display_value name="dExDamageBlock" value="5"/>
+				<display_value name="dExDamageFire" value="250"/>
+				<display_value name="dExRadius" value="3"/>
+				<display_value name="dDuration" value="16"/>
+			</effect_group>
+			<effect_group name="FRK_Fire_Refresh" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammoShotgunShock">
+			<property name="Tags" value="ammo,shotgun"/>
+			<property name="DisplayType" value="ammoShotgunSlug"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapPolymers"/>
+			<property name="Stacknumber" value="250"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="CustomIcon" value="ammoShotgunShock"/>
+			<effect_group name="ammoShotgunSlug" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="80" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_add" value="200" tags="wood"/>
+				<passive_effect name="RoundRayCount" operation="base_set" value="1" tags="perkBoomstick"/>
+				<passive_effect name="MaxRange" operation="base_set" value="18" tags="perkBoomstick"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="9" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.4" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.35" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkBoomstick"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkBoomstick"/>
+				<display_value name="dTargetPenetration" value="2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkBoomstick"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Arrows & Bolts -->
+		<item name="ammoArrowShock">
+			<property name="Extends" value="ammoArrowIron"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="TintColor" value="125,249,255"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="CustomIcon" value="ammoArrowShock"/>
+			<effect_group name="ammoArrowSteelAP" tiered="false">
+				<!-- ammoArrowSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="31"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltShock">
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
+			<property name="TintColor" value="125,249,255"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="UnlockedBy" value="shockRoundSchematic"/>
+			<property name="CustomIcon" value="ammoCrossbowBoltShock"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false">
+				<!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="45"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="82.5"/>
+				<passive_effect name="ProjectileStickChance" operation="perc_set" value="0"/>
+			</effect_group>
+			<effect_group name="FRK_Shock_Roll" tiered="false">
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group name="FRK_Shock_Refresh" tiered="false">
+				<requirement name="HasBuff" target="other" buff="buffShocked"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffShockedDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkElectrocutioner" operation="Equals" value="1"/>
+				</triggered_effect>
+			</effect_group>
+		</item>
+	</append>
+	
+	<!-- Add elemental rounds to allowed magazine items -->
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletIncendiary,ammo9mmBulletShock</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,,ammo9mmBulletIncendiary,ammo9mmBulletShock</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletIncendiary,ammo44MagnumBulletShock</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletIncendiary,ammo44MagnumBulletShock</append>
+	<append xpath="/items/item[contains(@name, 'gunRifle')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletIncendiary,ammo762mmBulletShock</append>
+	<append xpath="/items/item[contains(@name, 'gunMGT')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletIncendiary,ammo762mmBulletShock</append>
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowShock</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowShock</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowShock</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltShock</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltShock</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunIncendiary,ammoShotgunShock</append>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunIncendiary,ammoShotgunShock</append>
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoShotgunIncendiary,ammoShotgunShock</append>
+
+</FRK>

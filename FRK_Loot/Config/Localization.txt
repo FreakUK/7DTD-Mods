@@ -1,0 +1,36 @@
+Key,Source,Context,Changes,English
+palletWhiteBagsBaseFull,blocks,Container,KgNone,"Pallet:  White Bags Base"
+palletWhiteBagsTileFull,blocks,Container,KgNone,"Pallet:  White Bags Tile"
+palletWhiteBagsTopFull,blocks,Container,KgNone,"Pallet:  White Bags Top"
+palletWhiteBagsPartial1Full,blocks,Container,KgNone,"Pallet:  White Bags Partial 1"
+palletWhiteBagsPartial2Full,blocks,Container,KgNone,"Pallet:  White Bags Partial 2"
+palletWhiteBagsLooseFull,blocks,Container,KgNone,"Pallet:  White Bags Loose"
+palletBrownBoxesBaseFull,blocks,Container,KgNone,"Pallet:  Brown Boxes Base"
+palletBrownBoxesTileFull,blocks,Container,KgNone,"Pallet:  Brown Boxes Tile"
+palletBrownBoxesTopFull,blocks,Container,KgNone,"Pallet:  Brown Boxes Top"
+palletBrownBoxesLooseFull,blocks,Container,KgNone,"Pallet:  Brown Boxes Loose"
+palletBricksBaseFull,blocks,Container,KgNone,"Pallet:  Bricks Base"
+palletBricksTileFull,blocks,Container,KgNone,"Pallet:  Bricks Tile"
+palletBricksTopFull,blocks,Container,KgNone,"Pallet:  Bricks Top Full"
+palletBricksPartial1Full,blocks,Container,KgNone,"Pallet:  Bricks Partial 1"
+palletBricksPartial2Full,blocks,Container,KgNone,"Pallet:  Bricks Partial 2"
+palletBricksLooseFull,blocks,Container,KgNone,"Pallet:  Bricks Loose"
+palletBlueTarpBaseFull,blocks,Container,KgNone,"Pallet:  BlueTarp Base"
+palletBlueTarpTileFull,blocks,Container,KgNone,"Pallet:  BlueTarp Tile"
+storeShelving01Full,blocks,Container,KgNone,"Store Shelving 01"
+storeShelving01DoubleFull,blocks,Container,KgNone,"Store Shelving 01 Double"
+storeShelving01TopFull,blocks,Container,KgNone,"Store Shelving 01 Top"
+storeShelving01TopDoubleFull,blocks,Container,KgNone,"Store Shelving 01 Top Double"
+wineBarrelEmpty,blocks,Container,KgNone,"Wine Barrel Empty"
+wineBarrelSetEmpty,blocks,Container,KgNone,"Wine Barrel Set Empty"
+wineBarrelPlainEmpty,blocks,Container,KgNone,"Wine Barrel Plain Empty"
+wineBarrelFull,blocks,Container,KgNone,"Wine Barrel"
+wineBarrelPlainFull,blocks,Container,KgNone,"Wine Barrel Plain"
+resourceClayLumpBundle,items,Item,,Stack of Clay (6000),,
+resourceClayLumpBundleDesc,items,Item,,This is a compact stack of Clay. Use this item to open and unpack it.,,
+resourceCrushedSandBundle,items,Item,,Stack of Crushed Sand (6000),,
+resourceCrushedSandBundleDesc,items,Item,,This is a compact stack of Crushed Sand. Use this item to open and unpack it.,,
+resourceCobblestonesBundle,items,Item,,Stack of Cobblestones (6000),,
+resourceCobblestonesBundleDesc,items,Item,,This is a compact stack of Cobblestones. Use this item to open and unpack it.,,
+resourceCementBundle,items,Item,,Stack of Cement (6000),,
+resourceCementBundleDesc,items,Item,,This is a compact stack of Cement. Use this item to open and unpack it.,,

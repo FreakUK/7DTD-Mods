@@ -1,0 +1,263 @@
+<FRK>
+	<append xpath="/items">
+		<item name="schematicDeskSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntMetalDesk02RandomLootHelper"/>
+			<property name="Unlocks" value="schematicDesk"/>
+			<property name="DescriptionKey" value="schematicDeskSchematicDesc"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="schematicDesk" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<item name="schematicInkSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="schemInk"/>
+			<property name="Unlocks" value="schematicInk"/>
+			<property name="DescriptionKey" value="schematicInkSchematicDesc"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="schematicInk" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		<item name="schematicInk">
+			<property name="CreativeMode" value="Player"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="CustomIcon" value="schemInk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mpaint"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,schematicInkSchematic"/>
+		</item>
+		<item name="quillPen">
+			<property name="CreativeMode" value="Player"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="CustomIcon" value="quillPen"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceFeather"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Resources,Tools/Traps"/>
+			<property name="DescriptionKey" value="quillPenDesc"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1"/>
+		</item>
+		<item name="toolCalipers">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="5"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Resources,Tools/Traps"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="DescriptionKey" value="toolCalipersDesc"/>
+		</item>
+	</append>
+
+	<append xpath="/items/item[starts-with(@name, 'modGun')]">
+		<property name="Group" value="frkschCategoryMod"/>
+	</append>
+	<append xpath="/items/item[starts-with(@name, 'modShotgun')]">
+		<property name="Group" value="frkschCategoryMod"/>
+	</append>
+	<append xpath="/items/item[starts-with(@name, 'modArmor')]">
+		<property name="Group" value="frkschCategoryArmor"/>
+	</append>
+	<append xpath="/items/item[starts-with(@name, 'modMelee')]">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolRepairT3NailgunSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolPickT3AugerSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT2RatchetSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriverSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='meleeToolSteelSetSchematic']">
+		<property name="Group" value="frkschCategoryTool"/>
+	</append>
+	<append xpath="/items/item[@name='thrownAmmoPipeBombSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='thrownGrenadeContactSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='thrownGrenadeSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='thrownDynamiteSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='pressureplateSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='bladeTrapSchematic']">
+		<property name="Group" value="frkschCategoryTrap"/>
+	</append>
+	<append xpath="/items/item[@name='dartTrapSchematic']">
+		<property name="Group" value="frkschCategoryTrap"/>
+	</append>
+	<append xpath="/items/item[@name='shotgunTurretSchematic']">
+		<property name="Group" value="frkschCategoryTrap"/>
+	</append>
+	<append xpath="/items/item[@name='autoTurretSchematic']">
+		<property name="Group" value="frkschCategoryTrap"/>
+	</append>
+	<append xpath="/items/item[@name='generatorbankSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='electricfencepostSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='motionsensorSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='spotlightPlayerSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='switchSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='batterybankSchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='electrictimerrelaySchematic']">
+		<property name="Group" value="frkschCategoryElec"/>
+	</append>
+	<append xpath="/items/item[@name='ammoGasCanSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='resourceOilSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='resourceMilitaryFiberSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='cementMixerSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='workbenchSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='forgeSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='chemistryStationSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='toolBellowsSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='toolForgeCrucibleSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='toolAnvilSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='medicalPlasterCastSchematic']">
+		<property name="Group" value="frkschCategoryMeds"/>
+	</append>
+	<append xpath="/items/item[@name='medicalFirstAidBandageSchematic']">
+		<property name="Group" value="frkschCategoryMeds"/>
+	</append>
+	<append xpath="/items/item[@name='medicalFirstAidKitSchematic']">
+		<property name="Group" value="frkschCategoryMeds"/>
+	</append>
+	<append xpath="/items/item[@name='drugAntibioticsSchematic']">
+		<property name="Group" value="frkschCategoryMeds"/>
+	</append>
+	<append xpath="/items/item[@name='drugHerbalAntibioticsSchematic']">
+		<property name="Group" value="frkschCategoryMeds"/>
+	</append>
+	<append xpath="/items/item[@name='gunHandgunT1PistolSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5Schematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44Schematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVultureSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunRifleT2MarksmanRifleSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifleSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgunSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgunSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBowSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBowSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbowSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbowSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunMGT1AK47Schematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalARSchematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='gunMGT3M60Schematic']">
+		<property name="Group" value="frkschCategoryRWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerSchematic']">
+		<property name="Group" value="frkschCategoryMWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteSchematic']">
+		<property name="Group" value="frkschCategoryMWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonSchematic']">
+		<property name="Group" value="frkschCategoryMWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesSchematic']">
+		<property name="Group" value="frkschCategoryMWeapon"/>
+	</append>
+	<append xpath="/items/item[@name='modFuelTankSmallSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+	<append xpath="/items/item[@name='modFuelTankLargeSchematic']">
+		<property name="Group" value="frkschCategoryMisc"/>
+	</append>
+</FRK>

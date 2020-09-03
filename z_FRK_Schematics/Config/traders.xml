@@ -1,0 +1,19 @@
+<FRK>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='workstations']">
+		<item name="schematicDesk" />
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">
+		<item name="schematicInk" count="10,20" />
+	</append>	
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="schematicDeskSchematic" />
+	</append>	
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<item name="schematicInkSchematic" />
+	</append>
+
+</FRK>

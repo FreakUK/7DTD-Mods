@@ -1,0 +1,39 @@
+<FRK>
+	<!-- vehicleBicycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,2</set>
+	<!--Now 20 - used to be 9 -->
+
+	<!-- vehicleMinibike storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,4</set>
+	<!--Now 40 - used to be 27 -->
+
+	<!-- vehicleMotorcycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,6</set>
+	<!--Now 60 - used to be 36 -->
+
+	<!-- vehicle4x4Truck storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,10</set>
+	<!--Now 100 - used to be 81 -->
+
+	<!-- vehicleGyrocopter storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,8</set>
+	<!--Now 80 - used to be 45 -->
+	
+		<!-- Add "Vanilla" Vehicle Mods -->
+	<append xpath="/lootcontainers/lootgroup[@name='automotive']">
+		<item name="modVehicleMega" prob=".1"/>
+		<item name="modVehicleFuelSaver"/>
+		<item name="modVehicleHeadlights"/>
+		<item name="modVehicleSpeed"/>
+	</append>
+		<append xpath="/lootcontainers/lootcontainer[@id='66']">
+		<!-- Dumpsters -->
+		<item name="pjVehicleBicycleBluePlaceable" prob="0.21"/>
+		<item name="pjVehicleBicycleCyanPlaceable" prob="0.21"/>
+		<item name="pjVehicleBicycleGreenPlaceable" prob="0.21"/>
+		<item name="pjVehicleBicyclePinkPlaceable" prob="0.21"/>
+		<item name="pjVehicleBicycleRedPlaceable" prob="0.21"/>
+		<item name="pjVehicleBicycleWhitePlaceable" prob="0.21"/>
+		<item name="pjVehicleBicycleBlackPlaceable" prob="0.21"/>
+	</append>
+</FRK>

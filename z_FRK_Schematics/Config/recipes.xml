@@ -1,0 +1,622 @@
+<FRK>
+	<remove xpath="/recipes/recipe[@name='officeChair01']"/>
+	<append xpath="/recipes">
+		<!-- CORE RECIPES -->
+		<recipe name="officeChair01" count="1" craft_time="120" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceLeather" count="5"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceSewingKit" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+		</recipe>
+		<recipe name="schematicDesk" count="1" craft_area="workbench" tags="perkAdvancedEngineering,learnable,workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="quillPen" count="1"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="officeChair01" count="1"/>
+		</recipe>
+		<recipe name="schematicInk" count="20" craft_time="90" craft_area="chemistryStation" tags="perkAdvancedEngineering,learnable,chemStationCrafting">
+			<ingredient name="resourceOil" count="1"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+		</recipe>
+		<recipe name="quillPen" count="1" craft_time="30" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceFeather" count="1"/>
+			<ingredient name="resourceGlue" count="1"/>
+		</recipe>
+		<recipe name="toolCalipers" count="1" craft_time="120" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceOil" count="2"/>
+		</recipe>
+		<!-- MISCELLANEOUS RECIPES -->
+		<recipe name="ammoGasCanSchematic" count="1" craft_time="60" craft_area="schematicDesk">
+			<ingredient name="ammoGasCan" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="resourceOilSchematic" count="1" craft_time="60" craft_area="schematicDesk">
+			<ingredient name="resourceOil" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="resourceMilitaryFiberSchematic" count="1" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="resourceMilitaryFiber" count="10"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<!-- Tools -->
+		<recipe name="meleeToolRepairT3NailgunSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolRepairT3Nailgun" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="meleeToolSteelSetSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolAllSteelParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeToolSalvageT2RatchetSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolAllSteelParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeToolSalvageT3ImpactDriverSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeToolPickT3AugerSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeToolAxeT3ChainsawSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeToolAxeT3ChainsawParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!-- Thrown Items -->
+		<recipe name="thrownAmmoPipeBombSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="thrownAmmoPipeBomb" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="thrownGrenadeContactSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="thrownGrenadeContact" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="thrownGrenadeSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="thrownGrenade" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="thrownDynamiteSchematic" count="1" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="thrownDynamite" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<!-- Defences -->
+		<recipe name="pressureplateSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="pressureplate" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="bladeTrapSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="bladeTrap" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="dartTrapSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="dartTrap" count="1"/>
+			<ingredient name="resourcePaper" count="3"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="shotgunTurretSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="shotgunTurret" count="1"/>
+			<ingredient name="resourcePaper" count="4"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="autoTurretSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="autoTurret" count="1"/>
+			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="schematicInk" count="30"/>
+		</recipe>
+		<!-- Electrical Items -->
+		<recipe name="generatorbankSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="generatorbank" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="electricfencepostSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="electricfencepost" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="motionsensorSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="motionsensor" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="speakerSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="speaker" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="spotlightPlayerSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="spotlightPlayer" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="switchSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="switch" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="batterybankSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="batterybank" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="electrictimerrelaySchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="electrictimerrelay" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<!-- Work Station Schematics -->
+		<recipe name="cementMixerSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="cementMixer" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="workbenchSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="workbench" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="forgeSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="forge" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="chemistryStationSchematic" count="1" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="chemistryStation" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="toolBellowsSchematic" count="1" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="toolBellows" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="toolForgeCrucibleSchematic" count="1" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="toolForgeCrucible" count="1"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<recipe name="toolAnvilSchematic" count="1" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="toolAnvil" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="20"/>
+		</recipe>
+		<!-- Medical Schematics -->
+		<recipe name="medicalFirstAidBandageSchematic" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="medicalFirstAidBandage" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="medicalFirstAidKitSchematic" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="medicalFirstAidKit" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="medicalPlasterCastSchematic" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="medicalPlasterCast" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="drugAntibioticsSchematic" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="drugAntibiotics" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="drugHerbalAntibioticsSchematic" craft_time="120" craft_area="schematicDesk">
+			<ingredient name="drugHerbalAntibiotics" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!-- Weapon Schematics -->
+		<recipe name="meleeWpnSledgeT3SteelSledgehammerSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeWpnSledgeT3SteelSledgehammerParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeWpnBladeT3MacheteSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeWpnBladeT3MacheteParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeWpnBatonT2StunBatonSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeWpnBatonT2StunBatonParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="meleeWpnKnucklesT3SteelKnucklesSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="meleeWpnKnucklesT3SteelKnucklesParts" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBowT1WoodenBowSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBowT1WoodenBowParts" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBowT3CompoundBowSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBowT1WoodenBowParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBowT1IronCrossbowSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBowT1WoodenBowParts" count="5"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBowT3CompoundCrossbowSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBowT1WoodenBowParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunHandgunT1PistolSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunHandgunT1PistolParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunHandgunT2Magnum44Schematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunHandgunT1PistolParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunHandgunT3DesertVultureSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunHandgunT1PistolParts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunShotgunT1DoubleBarrelSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunShotgunT2PumpShotgunSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunShotgunT3AutoShotgunSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunShotgunT1DoubleBarrelParts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunHandgunT3SMG5Schematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunHandgunT1PistolParts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunMGT1AK47Schematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunMGT1AK47Parts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunMGT2TacticalARSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunMGT1AK47Parts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunMGT3M60Schematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunMGT1AK47Parts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunRifleT1HuntingRifleSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunRifleT2MarksmanRifleSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunRifleT3SniperRifleSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunRifleT1HuntingRifleParts" count="20"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunExplosivesT3RocketLauncherSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunExplosivesT3RocketLauncherParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBotT1JunkSledgeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBotRoboticsParts" count="10"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="gunBotT2JunkTurretSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="gunBotRoboticsParts" count="15"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!-- Weapon Mods -->
+		<recipe name="modGunBarrelExtenderSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunBarrelExtender" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunMuzzleBrakeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunMuzzleBrake" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunSoundSuppressorSilencerSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunSoundSuppressorSilencer" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunLaserSightSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunLaserSight" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunFlashlightSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunFlashlight" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunScopeSmallSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunScopeSmall" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunScopeMediumSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunScopeMedium" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunScopeLargeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunScopeLarge" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunReflexSightSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunReflexSight" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupSemiSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunTriggerGroupSemi" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupBurst3Schematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunTriggerGroupBurst3" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunTriggerGroupAutomaticSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunTriggerGroupAutomatic" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunBipodSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunBipod" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunForegripSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunForegrip" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunRetractingStockSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunRetractingStock" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunDuckbillSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunDuckbill" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunChokeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunChoke" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunMagazineExtenderSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunMagazineExtender" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modShotgunSawedOffBarrelSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modShotgunSawedOffBarrel" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunCrippleEmSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunCrippleEm" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunBowPolymerStringSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunBowPolymerString" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunBowArrowRestSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunBowArrowRest" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunMeleeTheHunterSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunMeleeTheHunter" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modGunMeleeRadRemoverSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modGunMeleeRadRemover" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeTemperedBladeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeTemperedBlade" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeSerratedBladeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeSerratedBlade" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeWeightedHeadSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeWeightedHead" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeStructuralBraceSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeStructuralBrace" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeErgonomicGripSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeErgonomicGrip" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeFortifyingGripSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeFortifyingGrip" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeClubBarbedWireSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeClubBarbedWire" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeClubMetalSpikesSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeClubMetalSpikes" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!-- Tool Mods -->
+		<recipe name="modMeleeGraveDiggerSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeGraveDigger" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeBunkerBusterSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeBunkerBuster" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeIronBreakerSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeIronBreaker" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeWoodSplitterSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeWoodSplitter" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modMeleeClubBurningShaftSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modMeleeClubBurningShaft" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!--Armor Mods -->
+		<recipe name="modArmorInsulatedLinerSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorInsulatedLiner" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorCoolingMeshSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorCoolingMesh" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorImprovedFittingsSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorImprovedFittings" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorCustomizedFittingsSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorCustomizedFittings" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorPlatingBasicSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorPlatingBasic" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorPlatingReinforcedSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorPlatingReinforced" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorStoragePocketSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorStoragePocket" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorDoubleStoragePocketSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorDoubleStoragePocket" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorTripleStoragePocketSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorTripleStoragePocket" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorMuffledConnectorsSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorMuffledConnectors" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorAdvancedMuffledConnectorsSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorAdvancedMuffledConnectors" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorImpactBracingSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorImpactBracing" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorWaterPurifierSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorWaterPurifier" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modArmorHelmetLightSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modArmorHelmetLight" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<!-- Power Tool Mods -->
+		<recipe name="modFuelTankSmallSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modFuelTankSmall" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+		<recipe name="modFuelTankLargeSchematic" craft_time="120" craft_area="schematicDesk" craft_tool="toolCalipers">
+			<ingredient name="modFuelTankLarge" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+			<ingredient name="schematicInk" count="10"/>
+		</recipe>
+	</append>
+</FRK>

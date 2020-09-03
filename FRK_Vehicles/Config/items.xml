@@ -1,0 +1,35 @@
+<FRK>
+<append xpath="/items">
+	
+		<item name="frkVehicleMilitaryCopChassis">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MilCopChassis"/>
+			<property name="DescriptionKey" value="MilCopChassisDesc"/>
+			<property name="EconomicValue" value="15000"/>
+		</item>
+		
+		<item name="frkVehicleMilitaryCopAccessories">
+			<property name="Extends" value="vehicleWheels"/>
+			<property name="CustomIcon" value="MilCopAccessories"/>
+			<property name="DescriptionKey" value="MilCopAccessoriesDesc"/>
+			<property name="EconomicValue" value="15000"/>
+		</item>
+		
+		<item name="frkVehicleMilitaryCopPlaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="MilCop"/>
+			<property name="DescriptionKey" value="MilCopDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/FRK_Vehicles.unity3d?FRKvehicleMilitaryCop2.prefab"/>
+			<property name="EconomicValue" value="30000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="frkVehicleMilitaryCop"/>
+				<property name="VehicleSize" value="4.7, 4.8, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="DegradationMax" operation="base_set" value="10000" tier="1,6"/>
+			</effect_group>
+		</item>
+
+</append>
+
+</FRK>

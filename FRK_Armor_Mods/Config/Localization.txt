@@ -39,3 +39,4 @@ modDyePlum,item_modifiers,mod,,,Dye: Plum
 modDyeIndigo,item_modifiers,mod,,,Dye: Indigo
 modDyeMaroon,item_modifiers,mod,,,Dye: Maroon
 modDyeCrimson,item_modifiers,mod,,,Dye: Crimson
+lblCategoryDye,UI,Tooltip,,,Dyes,,

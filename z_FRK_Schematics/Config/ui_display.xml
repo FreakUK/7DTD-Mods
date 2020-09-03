@@ -1,0 +1,16 @@
+<FRK>
+	<append xpath="/ui_display_info/crafting_category_display">
+			<crafting_category_list display_type="schematicDesk">
+				<crafting_category name="frkschCategoryMisc" icon="ui_game_symbol_misc_crafting" display_name="frkschCategoryMisc" />
+				<crafting_category name="frkschCategoryArmor" icon="ui_game_symbol_light_armor" display_name="frkschCategoryArmor" />
+				<crafting_category name="frkschCategoryMeds" icon="ui_game_symbol_medical" display_name="frkschCategoryMeds" />
+				<crafting_category name="frkschCategoryTool" icon="ui_game_symbol_hammer" display_name="frkschCategoryTool" />
+				<crafting_category name="frkschCategoryMWeapon" icon="ui_game_symbol_knife" display_name="frkschCategoryMWeapon" />
+				<crafting_category name="frkschCategoryRWeapon" icon="ui_game_symbol_rifle" display_name="frkschCategoryRWeapon" />
+				<crafting_category name="frkschCategoryElec" icon="ui_game_symbol_electric_power" display_name="frkschCategoryElec" />
+				<crafting_category name="frkschCategoryTrap" icon="ui_game_symbol_brokenbone" display_name="frkschCategoryTrap" />
+				<crafting_category name="frkschCategoryMod" icon="ui_game_symbol_modded" display_name="frkschCategoryMod" />
+			</crafting_category_list>
+	</append>
+
+</FRK>

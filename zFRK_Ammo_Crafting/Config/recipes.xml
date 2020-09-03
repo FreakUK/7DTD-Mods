@@ -1,0 +1,437 @@
+<FRK>
+	<remove xpath="/recipes/recipe[@name='resourceBulletCasing']"/>
+	<remove xpath="/recipes/recipe[@name='resourceBulletTip']"/>
+	<remove xpath="/recipes/recipe[@name='ammoShotgunShell']"/>
+	<remove xpath="/recipes/recipe[@name='ammoShotgunSlug']"/>
+	<remove xpath="/recipes/recipe[@name='ammoShotgunBreachingSlug']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunShell']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammo9mm')]"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammo762mm')]"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammo44Magnum')]"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle9mm')]"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle762')]"/>
+	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle44')]"/>
+	<append xpath="/recipes">
+		<recipe name="resourceLPprimer" count="50" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="8"/>
+			<ingredient name="resourceCoal" count="5"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		<recipe name="resourceSPprimer" count="50" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="4"/>
+			<ingredient name="resourceCoal" count="5"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		<recipe name="resourceLRprimer" count="50" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+			<ingredient name="resourceCoal" count="5"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		<recipe name="resourceSGprimer" count="50" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="10"/>
+			<ingredient name="resourceCoal" count="5"/>
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		<!-- 9mm -->
+		<recipe name="resourceSteelBulletTip9mm" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip9mmAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="40"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip9mmHP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="30"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip9mm" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip9mmAP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="1"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip9mmHP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="1"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletCasing9mm" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletCasing9mm" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_brass" count="5"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<!-- 7.62mm -->
+		<recipe name="resourceSteelBulletTip762mm" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="25"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip762mmAP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="45"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip762mmHP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="35"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip762mm" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip762mmAP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip762mmHP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletCasing762mm" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletCasing762mm" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_brass" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<!-- .44 -->
+		<recipe name="resourceSteelBulletTip44" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="25"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip44AP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="45"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletTip44HP" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="35"/>
+			<ingredient name="unit_clay" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip44" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip44AP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletTip44HP" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="3"/>
+			<ingredient name="unit_brass" count="1"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceSteelBulletCasing44" count="1" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBulletCasing44" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_brass" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_brass"/>
+			</effect_group>
+		</recipe>
+		<!-- Shotgun -->
+		<recipe name="resourceShotgunSlug" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_lead" count="10"/>
+			<ingredient name="unit_clay" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceShotgunBreachingSlug" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceShotgunCase" count="1" craft_area="workbench" tags="perkBoomstick">
+			<ingredient name="resourceScrapBrass" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="2" />
+		</recipe>
+
+		<!-- Actual Ammo, 9mm -->
+		<recipe name="ammo9mmBulletSteel" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip9mm" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceSteelBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo9mmBulletSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip9mmAP" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceSteelBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo9mmBulletSteelHP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip9mmHP" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceSteelBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo9mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip9mm" count="1"/>
+			<ingredient name="resourceGunPowder" count="1"/>
+			<ingredient name="resourceBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip9mm" count="80"/>
+			<ingredient name="resourceGunPowder" count="80"/>
+			<ingredient name="resourceBulletCasing9mm" count="80"/>
+			<ingredient name="resourceSPprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo9mmBulletHP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip9mmHP" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip9mmHP" count="80"/>
+			<ingredient name="resourceGunPowder" count="240"/>
+			<ingredient name="resourceBulletCasing9mm" count="80"/>
+			<ingredient name="resourceSPprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo9mmBulletAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip9mmAP" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing9mm" count="1"/>
+			<ingredient name="resourceSPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip9mmAP" count="80"/>
+			<ingredient name="resourceGunPowder" count="400"/>
+			<ingredient name="resourceBulletCasing9mm" count="80"/>
+			<ingredient name="resourceSPprimer" count="80"/>
+		</recipe>
+		<!-- Actual Ammo, 7.62mm -->
+		<recipe name="ammo762mmBulletSteel" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip762mm" count="1"/>
+			<ingredient name="resourceGunPowder" count="9"/>
+			<ingredient name="resourceSteelBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip762mmAP" count="1"/>
+			<ingredient name="resourceGunPowder" count="18"/>
+			<ingredient name="resourceSteelBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletSteelHP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip762mmHP" count="1"/>
+			<ingredient name="resourceGunPowder" count="14"/>
+			<ingredient name="resourceSteelBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip762mm" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip762mm" count="80"/>
+			<ingredient name="resourceGunPowder" count="240"/>
+			<ingredient name="resourceBulletCasing762mm" count="80"/>
+			<ingredient name="resourceLRprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo762mmBulletHP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip762mmHP" count="1"/>
+			<ingredient name="resourceGunPowder" count="3"/>
+			<ingredient name="resourceBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip762mmHP" count="80"/>
+			<ingredient name="resourceGunPowder" count="240"/>
+			<ingredient name="resourceBulletCasing762mm" count="80"/>
+			<ingredient name="resourceLRprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo762mmBulletAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip762mmAP" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<ingredient name="resourceBulletCasing762mm" count="1"/>
+			<ingredient name="resourceLRprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip762mmAP" count="80"/>
+			<ingredient name="resourceGunPowder" count="400"/>
+			<ingredient name="resourceBulletCasing762mm" count="80"/>
+			<ingredient name="resourceLRprimer" count="80"/>
+		</recipe>
+		<!-- Actual Ammo, .44 -->
+		<recipe name="ammo44MagnumBulletSteel" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip44" count="1"/>
+			<ingredient name="resourceGunPowder" count="6"/>
+			<ingredient name="resourceSteelBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletSteelHP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip44HP" count="1"/>
+			<ingredient name="resourceGunPowder" count="18"/>
+			<ingredient name="resourceSteelBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletSteelAP" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceSteelBulletTip44AP" count="1"/>
+			<ingredient name="resourceGunPowder" count="30"/>
+			<ingredient name="resourceSteelBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletBall" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBulletTip44" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip44" count="80"/>
+			<ingredient name="resourceGunPowder" count="160"/>
+			<ingredient name="resourceBulletCasing44" count="80"/>
+			<ingredient name="resourceLPprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletHP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip44HP" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip44HP" count="80"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceBulletCasing44" count="80"/>
+			<ingredient name="resourceLPprimer" count="80"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip44AP" count="1"/>
+			<ingredient name="resourceGunPowder" count="6"/>
+			<ingredient name="resourceBulletCasing44" count="1"/>
+			<ingredient name="resourceLPprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip44AP" count="80"/>
+			<ingredient name="resourceGunPowder" count="400"/>
+			<ingredient name="resourceBulletCasing44" count="80"/>
+			<ingredient name="resourceLPprimer" count="80"/>
+		</recipe>
+		<!-- Actual Ammo, Shotgun -->
+		<recipe name="ammoShotgunSlug" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceShotgunSlug" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceShotgunCase" count="1"/>
+			<ingredient name="resourceSGprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunSlug" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceShotgunSlug" count="80"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceShotgunCase" count="80"/>
+			<ingredient name="resourceSGprimer" count="80"/>
+		</recipe>
+		<recipe name="ammoShotgunShell" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceBuckshot" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceShotgunCase" count="1"/>
+			<ingredient name="resourceSGprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunShell" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBuckshot" count="80"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceShotgunCase" count="80"/>
+			<ingredient name="resourceSGprimer" count="80"/>
+		</recipe>
+		<recipe name="ammoShotgunBreachingSlug" count="1" craft_time="9" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceShotgunBreachingSlug" count="1"/>
+			<ingredient name="resourceGunPowder" count="4"/>
+			<ingredient name="resourceShotgunCase" count="1"/>
+			<ingredient name="resourceSGprimer" count="1"/>
+		</recipe>
+		<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceShotgunBreachingSlug" count="80"/>
+			<ingredient name="resourceGunPowder" count="320"/>
+			<ingredient name="resourceShotgunCase" count="80"/>
+			<ingredient name="resourceSGprimer" count="80"/>
+		</recipe>
+</append>
+</FRK>

@@ -1,0 +1,3 @@
+<FRK>
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='1,5']/@tags">,resourceLPprimer,resourceSPprimer,resourceLRprimer</append>
+</FRK>

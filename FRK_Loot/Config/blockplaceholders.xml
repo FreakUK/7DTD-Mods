@@ -1,0 +1,128 @@
+<FRK>
+	<append xpath="/blockplaceholders">
+	<!-- Shelving -->
+		<placeholder name="storeShelving01">
+			<block name="storeShelving01Empty" prob=".5"/>
+			<block name="storeShelving01Full" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="storeShelving01Double">
+			<block name="storeShelving01DoubleEmpty" prob=".5"/>
+			<block name="storeShelving01DoubleFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="storeShelving01Top">
+			<block name="storeShelving01TopEmpty" prob=".5"/>
+			<block name="storeShelving01TopFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="storeShelving01TopDouble">
+			<block name="storeShelving01TopDoubleEmpty" prob=".5"/>
+			<block name="storeShelving01TopDoubleFull" prob=".5"/>
+		</placeholder>
+	<!-- Pallets -->
+		<placeholder name="palletWhiteBagsBase">
+			<block name="palletWhiteBagsBaseFull" prob=".5"/>
+			<block name="palletWhiteBagsBaseEmpty" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletWhiteBagsTile">
+			<block name="palletWhiteBagsTileFull" prob=".5"/>
+			<block name="palletWhiteBagsTileEmpty" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletWhiteBagsTop">
+			<block name="palletWhiteBagsTopEmpty" prob=".5"/>
+			<block name="palletWhiteBagsTopFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletWhiteBagsPartial1">
+			<block name="palletWhiteBagsPartial1Empty" prob=".5"/>
+			<block name="palletWhiteBagsPartial1Full" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletWhiteBagsPartial2">
+			<block name="palletWhiteBagsPartial2Empty" prob=".5"/>
+			<block name="palletWhiteBagsPartial2Full" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletWhiteBagsLoose">
+			<block name="palletWhiteBagsLooseEmpty" prob=".5"/>
+			<block name="palletWhiteBagsLooseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBrownBoxesBase">
+			<block name="palletBrownBoxesBaseEmpty" prob=".5"/>
+			<block name="palletBrownBoxesBaseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBrownBoxesTile">
+			<block name="palletBrownBoxesTileEmpty" prob=".5"/>
+			<block name="palletBrownBoxesTileFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBrownBoxesTop">
+			<block name="palletBrownBoxesTopEmpty" prob=".5"/>
+			<block name="palletBrownBoxesTopFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBrownBoxesLoose">
+			<block name="palletBrownBoxesLooseEmpty" prob=".5"/>
+			<block name="palletBrownBoxesLooseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksBase">
+			<block name="palletBricksBaseEmpty" prob=".5"/>
+			<block name="palletBricksBaseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksTile">
+			<block name="palletBricksTileEmpty" prob=".5"/>
+			<block name="palletBricksTileFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksTop">
+			<block name="palletBricksTopEmpty" prob=".5"/>
+			<block name="palletBricksTopFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksPartial1">
+			<block name="palletBricksPartial1Empty" prob=".5"/>
+			<block name="palletBricksPartial1Full" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksPartial2">
+			<block name="palletBricksPartial2Empty" prob=".5"/>
+			<block name="palletBricksPartial2Full" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBricksLoose">
+			<block name="palletBricksLooseEmpty" prob=".5"/>
+			<block name="palletBricksLooseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBlueTarpBase">
+			<block name="palletBlueTarpBaseEmpty" prob=".5"/>
+			<block name="palletBlueTarpBaseFull" prob=".5"/>
+		</placeholder>
+
+		<placeholder name="palletBlueTarpTile">
+			<block name="palletBlueTarpTileEmpty" prob=".5"/>
+			<block name="palletBlueTarpTileFull" prob=".5"/>
+		</placeholder>
+	<!-- Barrels -->
+		<placeholder name="wineBarrel">
+			<block name="wineBarrelEmpty" prob=".5"/>
+			<block name="wineBarrelFull" prob=".5"/>
+		</placeholder>
+		<placeholder name="wineBarrelSet">
+			<block name="wineBarrelSetEmpty" prob=".5"/>
+			<block name="wineBarrelSetFull" prob=".5"/>
+		</placeholder>
+		<placeholder name="wineBarrelPlain">
+			<block name="wineBarrelPlainEmpty" prob=".5"/>
+			<block name="wineBarrelPlainFull" prob=".5"/>
+		</placeholder>
+	
+	</append>
+</FRK>

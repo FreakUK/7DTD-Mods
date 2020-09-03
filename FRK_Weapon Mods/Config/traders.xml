@@ -1,0 +1,13 @@
+<FRK>
+	<!-- Add Shock Rounds -->
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group/item[@name='modGunCrippleEm']">
+		<item name="modGunShockRounds"/>
+		<item name="modGunElementalRounds"/>
+		<item name="modGunIncendiaryRounds"/>
+	</insertAfter>
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group/item[@name='modGunCrippleEmSchematic']">
+		<item name="modGunShockRoundsSchematic"/>
+		<item name="modGunElementalRoundsSchematic"/>
+		<item name="modGunIncendiaryRoundsSchematic"/>
+	</insertAfter>
+</FRK>

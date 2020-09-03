@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="FRK_Ammo_Crafting" />
+		<Description value="New ammo types and better ammo crafting" />
+		<Author value="FreakUK" />
+		<Version value="A19_2.0" compat="A19" />
+	</ModInfo>
+</xml>

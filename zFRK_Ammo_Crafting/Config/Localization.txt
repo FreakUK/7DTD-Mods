@@ -1,0 +1,127 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,Context,English,Russian,Ukrainian
+resourceSPprimer,items,Item,,,,"Small Pistol Primer","Капсюль","Капсуль"
+resourceLPprimer,items,Item,,,,"Large Pistol Primer","Капсюль","Капсуль"
+resourceLRprimer,items,Item,,,,"Large Rifle Primer","Капсюль","Капсуль"
+resourceSGprimer,items,Item,,,,"Shotgun Primer","Капсюль","Капсуль"
+resourceSPprimerDesc,items,Item,,,,"Component used for crafting 9mm ammunition","Компонент, который используется для изготовления боеприпасов","Компонент, який використовується для виготовлення боєприпасів"
+resourceLPprimerDesc,items,Item,,,,"Component used for crafting .44 ammunition","Компонент, который используется для изготовления боеприпасов","Компонент, який використовується для виготовлення боєприпасів"
+resourceLRprimerDesc,items,Item,,,,"Component used for crafting 7.62mm ammunition","Компонент, который используется для изготовления боеприпасов","Компонент, який використовується для виготовлення боєприпасів"
+resourceSGprimerDesc,items,Item,,,,"Component used for crafting Shotgun ammunition","Компонент, который используется для изготовления боеприпасов","Компонент, який використовується для виготовлення боєприпасів"
+
+resourceSteelBulletTip9mm,items,Item,,,,"Steel 9mm Bullet Tip","Стальной наконечник пули 9 мм","Сталевий накінечник кулі 9 мм"
+resourceSteelBulletTip9mmAP,items,Item,,,,"Steel AP 9mm Bullet Tip","Стальной наконечник пули 9 мм","Сталевий накінечник кулі 9 мм"
+resourceSteelBulletTip9mmHP,items,Item,,,,"Steel HP 9mm Bullet Tip","Стальной наконечник пули 9 мм","Сталевий накінечник кулі 9 мм"
+resourceSteelBulletTip9mmDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip9mmAPDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip9mmHPDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+
+resourceSteelBulletTip762mm,items,Item,,,,"Steel 7.62mm Bullet Tip","Стальной наконечник пули  7.62 мм","Сталевий накінечник кулі 7.62 мм"
+resourceSteelBulletTip762mmAP,items,Item,,,,"Steel AP 7.62mm Bullet Tip","Стальной наконечник пули  7.62 мм","Сталевий накінечник кулі 7.62 мм"
+resourceSteelBulletTip762mmHP,items,Item,,,,"Steel HP 7.62mm Bullet Tip","Стальной наконечник пули  7.62 мм","Сталевий накінечник кулі 7.62 мм"
+resourceSteelBulletTip762mmDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip762mmAPDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip762mmHPDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+
+resourceSteelBulletTip44,items,Item,,,,"Steel .44 Bullet Tip","Стальной наконечник пули .44 мм","Сталевий накінечник кулі .44 мм"
+resourceSteelBulletTip44AP,items,Item,,,,"Steel AP .44 Bullet Tip","Стальной наконечник пули .44 мм","Сталевий накінечник кулі .44 мм"
+resourceSteelBulletTip44HP,items,Item,,,,"Steel HP .44 Bullet Tip","Стальной наконечник пули .44 мм","Сталевий накінечник кулі .44 мм"
+resourceSteelBulletTip44Desc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip44APDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+resourceSteelBulletTip44HPDesc,items,Item,,,,"More punch than a lead tip!","Больше урона, чем от свинцового наконечника!","Більше шкоди, ніж від свинцевого накінечника!"
+
+resourceBulletTip9mm,items,Item,,,,"9mm Bullet Tip","Наконечник пули 9 мм","Накінечник кулі 9 мм"
+resourceBulletTip9mmAP,items,Item,,,,"9mm AP Bullet Tip","Наконечник пули 9 мм","Накінечник кулі 9 мм"
+resourceBulletTip9mmHP,items,Item,,,,"9mm HP Bullet Tip","Наконечник пули 9 мм","Накінечник кулі 9 мм"
+resourceBulletTip9mmDesc,items,Item,,,,"9mm caliber Bullet Tip","Наконечник пули калибра 9 мм","Накінечник кулі калібру 9 мм"
+resourceBulletTip9mmAPDesc,items,Item,,,,"9mm caliber Bullet Tip","Наконечник пули калибра 9 мм","Накінечник кулі калібру 9 мм"
+resourceBulletTip9mmHPDesc,items,Item,,,,"9mm caliber Bullet Tip","Наконечник пули калибра 9 мм","Накінечник кулі калібру 9 мм"
+
+resourceBulletTip762mm,items,Item,,,,"7.62mm Bullet Tip","Наконечник пули 7.62 мм","Накінечник кулі 7.62 мм"
+resourceBulletTip762mmAP,items,Item,,,,"7.62mm AP Bullet Tip","Наконечник пули 7.62 мм","Накінечник кулі 7.62 мм"
+resourceBulletTip762mmHP,items,Item,,,,"7.62mm HP Bullet Tip","Наконечник пули 7.62 мм","Накінечник кулі 7.62 мм"
+resourceBulletTip762mmDesc,items,Item,,,,"7.62mm caliber Bullet Tip","Наконечник пули калибра 7.62 мм","Накінечник кулі калібру 7.62 мм"
+resourceBulletTip762mmAPDesc,items,Item,,,,"7.62mm caliber Bullet Tip","Наконечник пули калибра 7.62 мм","Накінечник кулі калібру 7.62 мм"
+resourceBulletTip762mmHPDesc,items,Item,,,,"7.62mm caliber Bullet Tip","Наконечник пули калибра 7.62 мм","Накінечник кулі калібру 7.62 мм"
+
+resourceBulletTip44,items,Item,,,,".44 Bullet Tip","Наконечник пули .44 мм","Накінечник кулі .44 мм"
+resourceBulletTip44AP,items,Item,,,,".44 AP Bullet Tip","Наконечник пули .44 мм","Накінечник кулі .44 мм"
+resourceBulletTip44HP,items,Item,,,,".44 HP Bullet Tip","Наконечник пули .44 мм","Накінечник кулі .44 мм"
+resourceBulletTip44Desc,items,Item,,,,".44 caliber Bullet Tip","Наконечник пули калибра .44 мм","Накінечник кулі калібру .44 мм"
+resourceBulletTip44APDesc,items,Item,,,,".44 caliber Bullet Tip","Наконечник пули калибра .44 мм","Накінечник кулі калібру .44 мм"
+resourceBulletTip44HPDesc,items,Item,,,,".44 caliber Bullet Tip","Наконечник пули калибра .44 мм","Накінечник кулі калібру .44 мм"
+
+resourceShotgunSlug,items,Item,,,,"Lead Shotgun Slug",,
+resourceShotgunSlugDesc,items,Item,,,,"Large Slug used for AP Shotgun Rounds",,
+resourceShotgunBreachingSlug,items,Item,,,,"Steel Shotgun Slug",,
+resourceShotgunBreachingSlugDesc,items,Item,,,,"Large Slug used for Breaching Rounds",,
+
+resourceSteelBulletCasing9mm,items,Item,,,,"Steel 9mm Bullet Casing","Стальная гильза пули 9 мм","Сталева гільза кулі 9 мм"
+resourceSteelBulletCasing9mmDesc,items,Item,,,,"9mm caliber Bullet Casing Made of Steel. Supports a heavier load","Стальная гильза для пули калибра 9 мм. Выдерживает более тяжелые нагрузки","Сталева гільза для кулі калібру 9 мм. Витримує більш важкі навантаження"
+resourceSteelBulletCasing762mm,items,Item,,,,"Steel 7.62mm Bullet Casing","Стальная гильза пули 7.62 мм","Сталева гільза кулі 7.62 мм"
+resourceSteelBulletCasing762mmDesc,items,Item,,,,"7.62mm caliber Bullet Casing Made of Steel. Supports a heavier load","Стальная гильза для пули калибра 7.62 мм. Выдерживает более тяжелые нагрузки","Сталева гільза для кулі калібру 7.62 мм. Витримує більш важкі навантаження"
+resourceSteelBulletCasing44,items,Item,,,,"Steel .44 caliber Casing","Стальная гильза пули .44 мм","Сталева гільза кулі .44 мм"
+resourceSteelBulletCasing44Desc,items,Item,,,,".44 caliber Bullet Casing Made of Steel. Supports a heavier load","Стальная гильза для пули калибра .44 мм. Выдерживает более тяжелые нагрузки","Сталева гільза для кулі калібру .44 мм. Витримує більш важкі навантаження"
+
+resourceBulletCasing9mm,items,Item,,,,"9mm Bullet Casing","Гильза 9 мм","Гільза 9 мм"
+resourceBulletCasing9mmDesc,items,Item,,,,"9mm caliber Bullet Casing","Гильза калибра 9 мм","Гільза калібру 9 мм"
+resourceBulletCasing762mm,items,Item,,,,"7.62mm Bullet Casing","Гильза 7.62 мм","Гільза 7.62 мм"
+resourceBulletCasing762mmDesc,items,Item,,,,"7.62mm caliber Bullet Casing","Гильза калибра 7.62 мм","Гільза калібру 7.62 мм"
+resourceBulletCasing44,items,Item,,,,".44 Bullet Casing","Гильза .44 мм","Гільза .44 мм"
+resourceBulletCasing44Desc,items,Item,,,,".44 caliber Bullet Casing","Гильза калибра .44 мм","Гільза калібру .44 мм"
+
+resourceShotgunCase,items,Item,,,,"Empty Shotgun Shell",,
+resourceShotgunCaseDesc,items,Item,,,"Empty Shotgun Shell used for creating Shotgun Ammo",,
+
+ammo9mmBulletSteel,items,Ammo,,,,"9mm Steel Bullet","Стальная 9-мм пуля","Сталева 9-мм куля"
+ammo9mmBulletSteelAP,items,Ammo,,,,"9mm Steel AP Bullet","Стальная 9-мм пуля","Сталева 9-мм куля"
+ammo9mmBulletSteelHP,items,Ammo,,,,"9mm Steel HP Bullet","Стальная 9-мм пуля","Сталева 9-мм куля"
+ammo9mmBulletSteelDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo9mmBulletSteelAPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo9mmBulletSteelHPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+
+ammo44MagnumBulletSteel,items,Ammo,,,,".44 Magnum Steel Bullet","Стальная .44-мм пуля","Сталева .44-мм куля"
+ammo44MagnumBulletSteelAP,items,Ammo,,,,"AP .44 Magnum Bullet","Стальная .44-мм пуля","Сталева .44-мм куля"
+ammo44MagnumBulletSteelHP,items,Ammo,,,,"HP .44 Magnum Bullet","Стальная .44-мм пуля","Сталева .44-мм куля"
+ammo44MagnumBulletSteelDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo44MagnumBulletSteelAPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo44MagnumBulletSteelHPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+
+ammo762mmBulletSteel,items,Ammo,,,,"7.62mm Steel Bullet","Стальная 7.62-мм пуля","Сталева 7.62-мм куля"
+ammo762mmBulletSteelAP,items,Ammo,,,,"AP 7.62mm Steel Bullet","Стальная 7.62-мм пуля","Сталева 7.62-мм куля"
+ammo762mmBulletSteelHP,items,Ammo,,,,"HP 7.62mm Steel Bullet","Стальная 7.62-мм пуля","Сталева 7.62-мм куля"
+ammo762mmBulletSteelDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo762mmBulletSteelAPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+ammo762mmBulletSteelHPDesc,items,Ammo,,,,"More Punch than its lead cousin...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+
+ammo9mmBulletIncendiary,items,Ammo,,,,"9mm Incendiary Rounds",,
+ammo9mmBulletIncendiaryDesc,items,Ammo,,,,"9mm Incendiary Rounds",,
+ammo9mmBulletShock,items,Ammo,,,,"9mm Shock Rounds",,
+ammo9mmBulletShockDesc,items,Ammo,,,,"9mm Electrical Rounds",,
+
+ammo44MagnumBulletIncendiary,items,Ammo,,,,".44Magnum Incendiary Rounds",,
+ammo44MagnumBulletIncendiaryDesc,items,Ammo,,,,".44Magnum Incendiary Rounds",,
+ammo44MagnumBulletShock,items,Ammo,,,,".44Magnum Shock Rounds",,
+ammo44MagnumBulletShockDesc,items,Ammo,,,,".44Magnum Electrical Rounds",,
+ammo44MagnumBulletHE,items,Ammo,,,,"Explosive .44 magnum Bullet","Стальная .44-мм пуля","Сталева .44-мм куля"
+ammo44MagnumBulletHEDesc,items,Ammo,,,,"Explosive .44 Rounds...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+
+ammo762mmBulletIncendiary,items,Ammo,,,,"7.62mm Incendiary Rounds",,
+ammo762mmBulletIncendiaryDesc,items,Ammo,,,,"7.62mm Incendiary Rounds",,
+ammo762mmBulletShock,items,Ammo,,,,"7.62mm Shock Rounds",,
+ammo762mmBulletShockDesc,items,Ammo,,,,"7.62mm Shock Rounds",,
+
+ammoShotgunIncendiary,items,Ammo,,,,"Incendiary Shotgun Slugs",,
+ammoShotgunIncendiaryDesc,items,Ammo,,,,"Incendiary Shotgun Slugs",,
+ammoShotgunShock,items,Ammo,,,,"Shocking Shotgun Slugs",,
+ammoShotgunShockDesc,items,Ammo,,,,"Shocking Shotgun Slugs",,
+
+ammoArrowShock,items,Ammo,,,,"Shock Arrow",,
+ammoArrowShockDesc,items,Ammo,,,,"Electrical Arrows",,
+
+ammoCrossbowBoltShock,items,Ammo,,,,"Shock Bolt",,
+ammoCrossbowBoltShockDesc,items,Ammo,,,,"Electrical Bolts",,
+
+incendiaryRoundSchematic,items,Schematic,,,,"Incendiary Ammo Schematic",,
+incendiaryRoundSchematicDesc,items,Schematic,,,,"Unlocks crafting of incendiary ammo, arrows, and bolts",,
+shockRoundSchematic,items,Schematic,,,,"Shock Ammo Schematic",,
+shockRoundSchematicDesc,items,Schematic,,,,"Unlocks crafting of shock ammo, arrows, and bolts",,

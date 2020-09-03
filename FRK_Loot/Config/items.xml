@@ -1,0 +1,36 @@
+<FRK>
+	<append xpath="/items">
+		<item name="resourceClayLumpBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceClayLump"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceClayLump"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		<item name="resourceCrushedSandBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCrushedSand"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCrushedSand"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		<item name="resourceCobblestonesBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCobblestones"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCobblestones"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+		<item name="resourceCementBundle">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="CustomIcon" value="resourceCement"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceCement"/>
+				<property name="Create_item_count" value="6000"/>
+			</property>
+		</item>
+	</append>
+</FRK>

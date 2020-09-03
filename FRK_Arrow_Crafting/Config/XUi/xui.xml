@@ -1,0 +1,5 @@
+<FRK>
+	<insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']">
+		<window name="windowToolsWorkbench"/>
+	</insertAfter>
+</FRK>

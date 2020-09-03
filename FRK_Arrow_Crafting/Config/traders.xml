@@ -1,0 +1,19 @@
+<FRK>
+	<remove xpath="/traders/trader_item_groups/trader_item_group/item[@name='resourceArrowHeadSteelAP']"/>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='ammoSupplies']">
+		<item name="resourceArrowShaftComposite" count="20,200" prob="0.05"/>
+		<item name="resourceArrowVaneComposite" count="20,200" prob="0.05"/>
+		<item name="resourceArrowHeadSteel" count="5,25" prob="0.05"/>
+		<item name="resourceArrowHeadGlass" count="5,25" prob="0.05"/>
+		<item name="resourceBoltShaftComposite" count="20,200" prob="0.05"/>
+		<item name="resourceBoltVaneComposite" count="20,200" prob="0.05"/>
+		<item name="resourceBoltHeadIron" count="20,200" prob="0.05"/>
+		<item name="resourceBoltHeadSteel" count="5,25" prob="0.05"/>
+		<item name="resourceBoltHeadGlass" count="5,25" prob="0.05"/>
+	</append>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='tools']">
+		<item name="toolForgeArrowMold" count="1"/>
+		<item name="toolForgeBoltMold" count="1"/>
+		<item name="toolFletchingTool" count="1"/>
+	</append>
+</FRK>

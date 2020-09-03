@@ -1,0 +1,81 @@
+Key,File,Type,Context,Changes,english
+toolForgeArrowMold,items,Tool,,,"Arrow Head Mold",,
+toolForgeArrowMoldDesc,items,Tool,,,"Mold for creating Arrow Heads - added to the forge",,
+toolForgeBoltMold,items,Tool,,,"Bolt Head Mold",,
+toolForgeBoltMoldDesc,items,Tool,,,"Mold for creating Crossbow Bolt Heads - added to the forge",,
+toolFletchingTool,items,Tool,,,"Fletching Tool",,
+toolFletchingToolDesc,items,Tool,,,"Tool for attaching fletching (vanes) to arrows and Crossbow bolts - used in a workbench",,
+
+resourceArrowShaftWood,items,Item,,,"Arrow Shaft, Wood",,
+resourceArrowShaftWoodDesc,items,Item,,,"Used for making arrows - The Long Stick Bit",,
+resourceArrowShaftComposite,items,Item,,,"Arrow Shaft, Composite",,
+resourceArrowShaftCompositeDesc,items,Item,,,"Used for making arrows - The Long Stick Bit",,
+
+resourceArrowVaneFeather,items,Item,,,"Arrow Vane, Feather",,
+resourceArrowVaneFeatherDesc,items,Item,,,"Used for making arrows - Provides Stability",,
+resourceArrowVaneDT,items,Item,,,"Arrow Vane, Duct Tape",,
+resourceArrowVaneDTDesc,items,Item,,,"Used for making arrows - Provides Stability",,
+resourceArrowVaneComposite,items,Item,,,"Arrow Vane, Plastic"
+resourceArrowVaneCompositeDesc,items,Item,,,"Used for making arrows - Provides Stability",,
+
+resourceArrowHeadStone,items,Item,,,"Arrow Head, Stone",,
+resourceArrowHeadStoneDesc,items,Item,,,"Used for making arrows - The pointy, stabby bit",,
+resourceArrowHeadIron,items,Item,,,"Arrow Head, Iron",,
+resourceArrowHeadIronDesc,items,Item,,,"Used for making arrows - The pointy, stabby bit",,
+resourceArrowHeadSteel,items,Item,,,"Arrow Head, Steel",,
+resourceArrowHeadSteelDesc,items,Item,,,"Used for making arrows - The pointy, stabby bit",,
+resourceArrowHeadGlass,items,Item,,,"Arrow Head, Glass",,
+resourceArrowHeadGlassDesc,items,Item,,,"Used for making arrows - The pointy, stabby bit",,
+
+resourceBoltShaftWood,items,Item,,,"Crossbow Bolt Shaft, Wood"
+resourceBoltShaftWoodDesc,items,Item,,,"Used for making crossbow bolts - The Long Stick Bit",,
+resourceBoltShaftComposite,items,Item,,,"Crossbow Bolt Shaft, Composite"
+resourceBoltShaftCompositeDesc,items,Item,,,"Used for making crossbow bolts - The Long Stick Bit",,
+
+resourceBoltVaneFeather,items,Item,,,"Crossbow bolt Vane, Feather",,
+resourceBoltVaneFeatherDesc,items,Item,,,"Used for making crossbow bolts - Provides Stability",,
+resourceBoltVaneDT,items,Item,,,"Crossbow bolt Vane, Duct Tape",,
+resourceBoltVaneDTDesc,items,Item,,,"Used for making crossbow bolts - Provides Stability",,
+resourceBoltVaneComposite,items,Item,,,"Crossbow bolt Vane, Plastic"
+resourceBoltVaneCompositeDesc,items,Item,,,"Used for making crossbow bolts - Provides Stability",,
+
+resourceBoltHeadStone,items,Item,,,"Crossbow bolt Head, Stone",,
+resourceBoltHeadStoneDesc,items,Item,,,"Used for making crossbow bolts - The pointy, stabby bit",,
+resourceBoltHeadIron,items,Item,,,"Crossbow bolt Head, Iron",,
+resourceBoltHeadIronDesc,items,Item,,,"Used for making crossbow bolts - The pointy, stabby bit",,
+resourceBoltHeadSteel,items,Item,,,"Crossbow bolt Head, Steel",,
+resourceBoltHeadSteelDesc,items,Item,,,"Used for making crossbow bolts - The pointy, stabby bit",,
+resourceBoltHeadGlass,items,Item,,,"Crossbow bolt Head, Glass",,
+resourceBoltHeadGlassDesc,items,Item,,,"Used for making crossbow bolts - The pointy, stabby bit",,
+
+ammoArrowStone,items,Ammo,,,"Arrow, Stone",,
+ammoArrowStoneDesc,items,Ammo,,,"Stone Arrow with a wooden shaft, and feather vanes.",,
+
+ammoArrowIron,items,Ammo,,,"Arrow, Iron",,
+ammoArrowIronDesc,items,Ammo,,,"Iron Arrow with a wooden shaft, and feather vanes.",,
+ammoArrowCompositeIronFeather,items,Ammo,,,"Arrow, Iron, Composite Shaft",,
+ammoArrowCompositeIronFeatherDesc,items,Ammo,,,"Iron Arrow with a composite shaft, and feather vanes.",,
+ammoArrowCompositeIronComposite,items,Ammo,,,"Arrow, Iron, Composite Shaft and Vanes",,
+ammoArrowCompositeIronCompositeDesc,items,Ammo,,,"Iron Arrow with a composite shaft, and composite vanes.",,
+
+ammoArrowSteelAP,items,Ammo,,,"Arrow, Steel AP",,
+ammoArrowSteelAPDesc,items,Ammo,,,"Steel, Armor Piercing Arrow with a composite shaft, and composite vanes.",,
+
+ammoArrowGlass,items,Ammo,,,"Arrow, Glass AP",,
+ammoArrowGlassDesc,items,Ammo,,,"Glass, Armor Piercing Arrow with a composite shaft, and composite vanes.",,
+
+ammoCrossbowBoltStone,items,Ammo,,,"Bolt, Stone",,
+ammoCrossbowBoltStoneDesc,items,Ammo,,,"Stone Crossbow Bolt with a wooden shaft, and feather vanes.",,
+
+ammoCrossbowBoltIron,items,Ammo,,,"Bolt, Iron",,
+ammoCrossbowBoltIronDesc,items,Ammo,,,"Iron Crossbow Bolt with a wooden shaft, and feather vanes.",,
+ammoCrossbowBoltCompositeIronFeather,items,Ammo,,,"Bolt, Iron, Composite Shaft",,
+ammoCrossbowBoltCompositeIronFeatherDesc,items,Ammo,,,"Iron Crossbow Bolt with a composite shaft, and feather vanes.",,
+ammoCrossbowBoltCompositeIronComposite,items,Ammo,,,"Bolt, Iron, Composite Shaft and Vanes",,
+ammoCrossbowBoltCompositeIronCompositeDesc,items,Ammo,,,"Iron Crossbow Bolt with a composite shaft, and composite vanes.",,
+
+ammoCrossbowBoltSteelAP,items,Ammo,,,"Bolt, Steel AP",,
+ammoCrossbowBoltSteelAPDesc,items,Ammo,,,"Steel, Armor Piercing Crossbow Bolt with a composite shaft, and composite vanes.",,
+
+ammoCrossbowBoltGlass,items,Ammo,,,"Bbolt, Glass AP",,
+ammoCrossbowBoltGlassDesc,items,Ammo,,,"Glass, Armor Piercing Crossbow Bolt with a composite shaft, and composite vanes.",,

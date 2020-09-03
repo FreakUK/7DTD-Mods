@@ -1,0 +1,10 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+modGunShockRounds,item_modifiers,mod,,,Shock Mod,,
+modGunShockRoundsDesc,item_modifiers,mod,,,"Absolutely Shocking Ammo modifier!",,
+modGunShockRoundsSchematic,items,Schematic,,,Shock Rounds Mod Schematic,,
+modGunIncendiaryRounds,item_modifiers,mod,,,Incendiary Mod,,,,,
+modGunIncendiaryRoundsDesc,item_modifiers,mod,,,"Hottest Ammo modifier available!",,
+modGunIncendiaryRoundsSchematic,items,Schematic,,,Incendiary Rounds Mod Schematic,,
+modGunElementalRounds,item_modifiers,mod,,,Elemental Mod,,,,,
+modGunElementalRoundsDesc,item_modifiers,mod,,,"Shockingly Hottest Ammo modifier available!",,
+modGunElementalRoundsSchematic,items,Schematic,,,Elemental Rounds Mod Schematic,,

@@ -1,0 +1,311 @@
+<FRK>
+	<!-- Remove existing arrow/bolt recipes -->
+	<remove xpath="/recipes/recipe[@name='resourceArrowHeadSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='resourceArrowHeadIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowStone']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleArrowExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltSteelAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltExploding']"/>
+	<remove xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']"/>
+	<append xpath="/recipes">
+		<!-- Tools -->
+		<recipe name="toolForgeArrowMold" craft_area="workbench" tags="learnable,perkArchery">
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+		</recipe>
+		<recipe name="toolForgeBoltMold" craft_area="workbench" tags="learnable,perkArchery">
+			<ingredient name="resourceForgedSteel" count="2"/>
+			<ingredient name="resourceClayLump" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+		</recipe>
+		<recipe name="toolFletchingTool" craft_area="Workbench" tags="learnable,perkArchery">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+		</recipe>
+		<!-- Bow Ammo Components -->
+		<recipe name="resourceArrowShaftWood" count="3">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+		<recipe name="resourceArrowShaftComposite" count="5" craft_area="workbench">
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="resourceArrowVaneFeather" count="2">
+			<ingredient name="resourceFeather" count="1"/>
+		</recipe>
+		<recipe name="resourceArrowVaneDT" count="6">
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="resourceArrowVaneComposite" count="3" craft_area="workbench">
+			<ingredient name="resourceScrapPolymers" count="9"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="resourceArrowHeadStone" count="3">
+			<item name="resourceRockSmall" count="5"/>
+		</recipe>
+		<!-- Xbow Ammo Components -->
+		<recipe name="resourceBoltShaftWood" count="3">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+		<recipe name="resourceBoltShaftComposite" count="5" craft_area="workbench">
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="resourceBoltVaneFeather" count="2">
+			<ingredient name="resourceFeather" count="1"/>
+		</recipe>
+		<recipe name="resourceBoltVaneDT" count="6">
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<recipe name="resourceBoltVaneComposite" count="3" craft_area="workbench">
+			<ingredient name="resourceScrapPolymers" count="9"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="resourceBoltHeadStone" count="3">
+			<item name="resourceRockSmall" count="5"/>
+		</recipe>
+		<!-- Forge Recipes, Tips -->
+		<recipe name="resourceArrowHeadIron" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeArrowMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="3"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceArrowHeadSteel" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeArrowMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceArrowHeadGlass" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeArrowMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_glass" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<ingredient name="unit_lead" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_lead"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBoltHeadIron" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeBoltMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="3"/>
+			<ingredient name="unit_clay" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.177,.12" tags="unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBoltHeadSteel" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeBoltMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_iron" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_iron"/>
+			</effect_group>
+		</recipe>
+		<recipe name="resourceBoltHeadGlass" count="3" material_based="true" craft_area="forge" craft_tool="toolForgeBoltMold" tags="perkAdvancedEngineering">
+			<ingredient name="unit_glass" count="15"/>
+			<ingredient name="unit_clay" count="5"/>
+			<ingredient name="unit_lead" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="unit_clay,unit_lead"/>
+			</effect_group>
+		</recipe>
+		<!-- Ammo, Arrows -->
+		<recipe name="ammoArrowStone">
+			<ingredient name="resourceArrowShaftWood" count="1"/>
+			<ingredient name="resourceArrowVaneFeather" count="2"/>
+			<ingredient name="resourceArrowHeadStone" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowStone">
+			<ingredient name="resourceArrowShaftWood" count="1"/>
+			<ingredient name="resourceArrowVaneDT" count="3"/>
+			<ingredient name="resourceArrowHeadStone" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowIron">
+			<ingredient name="resourceArrowShaftWood" count="1"/>
+			<ingredient name="resourceArrowVaneFeather" count="2"/>
+			<ingredient name="resourceArrowHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowCompositeIronFeather">
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceArrowVaneFeather" count="2"/>
+			<ingredient name="resourceArrowHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowCompositeIronComposite" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceArrowVaneComposite" count="3"/>
+			<ingredient name="resourceArrowHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowSteelAP" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceArrowVaneComposite" count="3"/>
+			<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowGlass" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceArrowVaneComposite" count="3"/>
+			<ingredient name="resourceArrowHeadGlass" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowVaneComposite" count="3"/>
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		<recipe name="ammoArrowExploding" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="1"/>
+			<ingredient name="resourceArrowVaneComposite" count="3"/>
+			<ingredient name="resourceArrowShaftComposite" count="1"/>
+			<ingredient name="resourceGunPowder" count="6"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<!--Ammo, Bolts -->
+		<recipe name="ammoCrossbowBoltStone">
+			<ingredient name="resourceBoltShaftWood" count="1"/>
+			<ingredient name="resourceBoltVaneFeather" count="2"/>
+			<ingredient name="resourceBoltHeadStone" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltStone">
+			<ingredient name="resourceBoltShaftWood" count="1"/>
+			<ingredient name="resourceBoltVaneDT" count="2"/>
+			<ingredient name="resourceBoltHeadStone" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltIron">
+			<ingredient name="resourceBoltShaftWood" count="1"/>
+			<ingredient name="resourceBoltVaneFeather" count="2"/>
+			<ingredient name="resourceBoltHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltCompositeIronFeather">
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneFeather" count="2"/>
+			<ingredient name="resourceBoltHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltCompositeIronComposite" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneComposite" count="3"/>
+			<ingredient name="resourceBoltHeadIron" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltSteelAP" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneComposite" count="3"/>
+			<ingredient name="resourceBoltHeadSteel" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltGlass" craft_area="workbench" craft_tool="toolFletchingTool">
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneComposite" count="3"/>
+			<ingredient name="resourceBoltHeadGlass" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltFlaming" count="1" craft_time="14" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadSteel" count="1"/>
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneComposite" count="3"/>
+			<ingredient name="resourceGunPowder" count="2"/>
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltExploding" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadSteel" count="1"/>
+			<ingredient name="resourceBoltShaftComposite" count="1"/>
+			<ingredient name="resourceBoltVaneComposite" count="3"/>
+			<ingredient name="resourceGunPowder" count="8"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		<!-- Ammo, Arrow Bundles -->
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceArrowHeadStone" count="80"/>
+			<ingredient name="resourceArrowShaftWood" count="80"/>
+			<ingredient name="resourceArrowVaneFeather" count="160"/>
+		</recipe>
+		<recipe name="ammoBundleArrowStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceArrowHeadStone" count="80"/>
+			<ingredient name="resourceArrowShaftWood" count="80"/>
+			<ingredient name="resourceArrowVaneDT" count="240"/>
+		</recipe>
+		<recipe name="ammoBundleArrowIron" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceArrowHeadIron" count="80"/>
+			<ingredient name="resourceArrowShaftWood" count="80"/>
+			<ingredient name="resourceArrowVaneFeather" count="160"/>
+		</recipe>
+		<recipe name="ammoBundleArrowSteelAP" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+			<ingredient name="resourceArrowShaftComposite" count="80"/>
+			<ingredient name="resourceArrowVaneComposite" count="240"/>
+		</recipe>
+		<recipe name="ammoBundleArrowGlass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadGlass" count="80"/>
+			<ingredient name="resourceArrowShaftComposite" count="80"/>
+			<ingredient name="resourceArrowVaneComposite" count="240"/>
+		</recipe>
+		<recipe name="ammoBundleArrowFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="80"/>
+			<ingredient name="resourceArrowVaneComposite" count="240"/>
+			<ingredient name="resourceArrowShaftComposite" count="80"/>
+			<ingredient name="resourceGunPowder" count="160"/>
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceAnimalFat" count="80"/>
+		</recipe>
+		<recipe name="ammoBundleArrowExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceArrowHeadSteelAP" count="60"/>
+			<ingredient name="resourceArrowShaftComposite" count="60"/>
+			<ingredient name="resourceArrowVaneComposite" count="180"/>
+			<ingredient name="resourceGunPowder" count="360"/>
+			<ingredient name="resourceDuctTape" count="60"/>
+		</recipe>
+		<!-- Ammo, Bolt Bundles -->
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceBoltHeadStone" count="80"/>
+			<ingredient name="resourceBoltShaftWood" count="80"/>
+			<ingredient name="resourceBoltVaneDT" count="160"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltStone" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceBoltHeadStone" count="80"/>
+			<ingredient name="resourceBoltShaftWood" count="80"/>
+			<ingredient name="resourceBoltVaneFeather" count="160"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltIron" count="1" craft_time="240" tags="learnable">
+			<ingredient name="resourceBoltHeadIron" count="80"/>
+			<ingredient name="resourceBoltShaftWood" count="80"/>
+			<ingredient name="resourceBoltVaneFeather" count="160"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltSteelAP" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadSteel" count="80"/>
+			<ingredient name="resourceBoltShaftComposite" count="80"/>
+			<ingredient name="resourceBoltVaneComposite" count="240"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltGlass" count="1" craft_time="240" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadGlass" count="80"/>
+			<ingredient name="resourceBoltShaftComposite" count="80"/>
+			<ingredient name="resourceBoltVaneComposite" count="240"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltFlaming" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadSteel" count="80"/>
+			<ingredient name="resourceBoltShaftComposite" count="80"/>
+			<ingredient name="resourceBoltVaneComposite" count="240"/>
+			<ingredient name="resourceGunPowder" count="160"/>
+			<ingredient name="resourceCloth" count="80"/>
+			<ingredient name="resourceAnimalFat" count="80"/>
+		</recipe>
+		<recipe name="ammoBundleCrossbowBoltExploding" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBoltHeadSteel" count="60"/>
+			<ingredient name="resourceBoltShaftComposite" count="60"/>
+			<ingredient name="resourceBoltVaneComposite" count="180"/>
+			<ingredient name="resourceGunPowder" count="480"/>
+			<ingredient name="resourceDuctTape" count="60"/>
+		</recipe>
+	</append>
+</FRK>

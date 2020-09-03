@@ -1,0 +1,26 @@
+<FRK>
+	<remove xpath="/lootcontainers/lootgroup/item[@name='resourceArrowHeadSteelAP']"/>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='resourceArrowHeadIron">
+		<item name="resourceArrowHeadSteel" count="10,30" prob="0.3"/>
+		<item name="resourceArrowHeadGlass" count="10,30" prob="0.3"/>
+		<item name="resourceBoltHeadIron" count="10,30"/>
+		<item name="resourceBoltHeadSteel" count="10,30" prob="0.3"/>
+		<item name="resourceBoltHeadGlass" count="10,30" prob="0.3"/>
+	</insertAfter>
+	<append xpath="/lootcontainers/lootgroup[@name='workbenchLoot']">
+		<item name="resourceArrowShaftComposite" count="5,15"/>
+		<item name="resourceBoltShaftComposite" count="5,15"/>
+		<item name="resourceArrowVaneComposite" count="5,15"/>
+		<item name="resourceBoltVaneComposite" count="5,15"/>
+	</append>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='ammoArrowIron']">
+		<item name="ammoCrossbowBoltCompositeIronFeather" count="6,24"/>
+		<item name="ammoCrossbowBoltCompositeIronComposite" count="6,24"/>
+		<item name="ammoArrowCompositeIronFeather" count="6,24"/>
+		<item name="ammoArrowCompositeIronComposite" count="6,24"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='ammoArrowSteelAP']">
+		<item name="ammoArrowGlass" prob=".15" count="10,20"/>
+		<item name="ammoCrossbowBoltGlass" prob=".15" count="10,20"/>
+	</insertAfter>
+</FRK>

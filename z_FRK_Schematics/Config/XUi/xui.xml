@@ -1,0 +1,19 @@
+<FRK>
+
+	<append xpath="/xui/ruleset">
+	
+	<window_group name="workstation_schematicDesk" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowToolsDesk"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	
+	</append>	
+
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_schematicDesk']/window[@name='windowCraftingQueue']/@name">FRKSCHwindowCraftingQueue</set>
+
+	
+</FRK>

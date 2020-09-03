@@ -1,0 +1,809 @@
+<FRK>
+	<!-- Remove existing Components and ammo -->
+	<remove xpath="/items/item[@name='resourceArrowHeadSteelAP']"/>
+	<remove xpath="/items/item[@name='resourceArrowHeadIron']"/>
+	<remove xpath="/items/item[@name='ammoArrowStone']"/>
+	<remove xpath="/items/item[@name='ammoArrowIron']"/>
+	<remove xpath="/items/item[@name='ammoArrowSteelAP']"/>
+	<remove xpath="/items/item[@name='ammoCrossbowBoltStone']"/>
+	<remove xpath="/items/item[@name='ammoCrossbowBoltIron']"/>
+	<remove xpath="/items/item[@name='ammoCrossbowBoltSteelAP']"/>
+	<append xpath="/items">
+		<!-- Tools, Forge -->
+		<item name="toolForgeArrowMold">
+			<property name="UnlockedBy" value="perkArchery"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="30"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="CustomIcon" value="toolForgeArrowMold"/>
+			<property name="ItemTypeIcon" value="forge"/>
+		</item>
+		<item name="toolForgeBoltMold">
+			<property name="UnlockedBy" value="perkArchery"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="30"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="CustomIcon" value="toolForgeBoltMold"/>
+			<property name="ItemTypeIcon" value="forge"/>
+		</item>
+		<!-- Tools, WorkBench -->
+		<item name="toolFletchingTool">
+			<property name="UnlockedBy" value="perkArchery"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="30"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="CustomIcon" value="toolFletchingTool"/>
+			<property name="ItemTypeIcon" value="workbench"/>
+		</item>
+		<!-- Bow Ammo Components -->
+		<item name="resourceArrowShaftWood">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceWood"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowShaftWood"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowShaftComposite">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowShaftComposite"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowVaneFeather">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceFeather"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowVaneFeather"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowVaneDT">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowVaneDT"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowVaneComposite">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowVaneComposite"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowHeadStone">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowHeadStone"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowHeadIron">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowHeadIron"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowHeadSteel">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowHeadSteel"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceArrowHeadGlass">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceArrowHeadGlass"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<!-- Xbow Ammo Components -->
+		<item name="resourceBoltShaftWood">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceWood"/>
+			<property name="Weight" value="5"/>
+			<property name="CustomIcon" value="resourceBoltShaftWood"/>
+			<property name="Stacknumber" value="6000"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltShaftComposite">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltShaftComposite"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltVaneFeather">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceFeather"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltVaneFeather"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltVaneDT">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltVaneDT"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltVaneComposite">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplastics"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltVaneComposite"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltHeadStone">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mstone"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltHeadStone"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltHeadIron">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltHeadIron"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltHeadSteel">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltHeadSteel"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+		<item name="resourceBoltHeadGlass">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="CustomIcon" value="resourceBoltHeadGlass"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="50"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+	</append>
+	<!-- Arrows -->
+	<insertBefore xpath="/items/item[@name='ammoArrowFlaming']">
+		<item name="ammoArrowStone">
+			<property name="CustomIcon" value="ammoArrowStone"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/arrowPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value="1"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<!-- no expl. -->
+				<property name="FlyTime" value="0"/>
+				<property name="Gravity" value="-4"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<effect_group name="ammoArrowStone" tiered="false">
+				<!-- ammoArrowStone -->
+				<passive_effect name="EntityDamage" operation="base_set" value="20"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="30"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowWoodStoneDT">
+			<property name="CustomIcon" value="ammoArrowStone"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/arrowPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value="1"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<!-- no expl. -->
+				<property name="FlyTime" value="0"/>
+				<property name="Gravity" value="-4"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<effect_group name="ammoArrowWoodStoneDT" tiered="false">
+				<!-- ammoArrowStone -->
+				<passive_effect name="EntityDamage" operation="base_set" value="20"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="30"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowIron">
+			<property name="CustomIcon" value="ammoArrowIron"/>
+			<property name="Extends" value="ammoArrowStone"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Gravity" value="-3.5"/>
+			</property>
+			<effect_group name="ammoArrowIron" tiered="false">
+				<!-- ammoArrowIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="3"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="40"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowCompositeIronFeather">
+			<property name="CustomIcon" value="ammoArrowCompositeIronComposite"/>
+			<property name="Extends" value="ammoArrowStone"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Gravity" value="-3"/>
+			</property>
+			<effect_group name="ammoArrowCompositeIronFeather" tiered="false">
+				<!-- ammoArrowIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="3"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="45"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowCompositeIronComposite">
+			<property name="CustomIcon" value="ammoArrowCompositeIronComposite"/>
+			<property name="Extends" value="ammoArrowStone"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Gravity" value="-2.5"/>
+			</property>
+			<effect_group name="ammoArrowCompositeIronComposite" tiered="false">
+				<!-- ammoArrowIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="40"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="3"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="50"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowSteelAP">
+			<property name="CustomIcon" value="ammoArrowCompoundSteelCompound"/>
+			<property name="Extends" value="ammoArrowIron"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<effect_group name="ammoArrowSteelAP" tiered="false">
+				<!-- ammoArrowSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="45"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+			</effect_group>
+		</item>
+		<item name="ammoArrowGlass">
+			<property name="CustomIcon" value="ammoArrowCompositeGlassComposite"/>
+			<property name="Extends" value="ammoArrowSteelAP"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="StickyMeshFile" value="#Other/Items?Weapons/Ranged/Bows/WoodenBow/bodkinArrowPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="StickyOffset" value=".5"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<effect_group name="ammoArrowSteelAP" tiered="false">
+				<!-- ammoArrowSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="50"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="55"/>
+			</effect_group>
+		</item>
+	</insertBefore>
+	<insertAfter xpath="/items/item[@name='ammoBundleArrowSteelAP']">
+		<item name="ammoBundleArrowGlass">
+			<property name="Extends" value="ammoBundleArrowStone"/>
+			<property name="CustomIcon" value="ammoArrowCompositeGlassComposite"/>
+			<property name="EconomicValue" value="1140"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammoArrowGlass"/>
+			</property>
+		</item>
+	</insertAfter>
+	<!-- Bolts -->
+	<insertBefore xpath="/items/item[@name='ammoCrossbowBoltFlaming']">
+		<item name="ammoCrossbowBoltStone">
+			<property name="CustomIcon" value="ammoCrossbowBoltStone"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mwood"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="8"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<property name="Gravity" value="-3"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+				<!-- <property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="DamageBonus.cloth" value="0"/> -->
+			</property>
+			<effect_group name="ammoCrossbowBoltStone" tiered="false">
+				<!-- ammoCrossbowBoltStone -->
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltWoodStoneDT">
+			<property name="CustomIcon" value="ammoCrossbowBoltStone"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mwood"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="8"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<property name="Gravity" value="-3"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+				<!-- <property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="DamageBonus.cloth" value="0"/> -->
+			</property>
+			<effect_group name="ammoBoltWoodStoneDT" tiered="false">
+				<!-- ammoCrossbowBoltStone -->
+				<passive_effect name="EntityDamage" operation="base_set" value="30"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="65"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltIron">
+			<property name="CustomIcon" value="ammoCrossbowBoltIron"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<!-- no expl. -->
+				<property name="Gravity" value="-2.5"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="ammoCrossbowBoltIron" tiered="false">
+				<!-- ammoCrossbowBoltIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="35"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="70"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltCompositeIronFeather">
+			<property name="CustomIcon" value="ammoCrossbowBoltCompositeIronFeather"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<!-- no expl. -->
+				<property name="Gravity" value="-2"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="ammoCrossbowBoltCompositeIronFeather" tiered="false">
+				<!-- ammoCrossbowBoltIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="40"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="75"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltCompositeIronComposite">
+			<property name="CustomIcon" value="ammoCrossbowBoltCompositeIronComposite"/>
+			<property name="Tags" value="ammo,ranged,attAgility,perkArchery,perkPenetrator"/>
+			<property name="DisplayType" value="ammoArrow"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<property name="Stacknumber" value="150"/>
+			<!-- STK ammo low -->
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property class="Action1">
+				<property name="Class" value="Projectile"/>
+				<property name="Explosion.ParticleIndex" value="0"/>
+				<!-- no expl. -->
+				<property name="Gravity" value="-1.7"/>
+				<property name="FlyTime" value="0"/>
+				<property name="LifeTime" value="14"/>
+			</property>
+			<property class="Attributes">
+				<property name="GetQualityFromWeapon" value="true"/>
+			</property>
+			<effect_group name="ammoCrossbowBoltCompositeIronComposite" tiered="false">
+				<!-- ammoCrossbowBoltIron -->
+				<passive_effect name="EntityDamage" operation="base_set" value="45"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="80"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltSteelAP">
+			<property name="CustomIcon" value="ammoBoltCompoundSteelCompound"/>
+			<property name="Extends" value="ammoCrossbowBoltIron"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<effect_group name="ammoCrossbowBoltSteelAP" tiered="false">
+				<!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="50"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="85"/>
+			</effect_group>
+		</item>
+		<item name="ammoCrossbowBoltGlass">
+			<property name="CustomIcon" value="ammoCrossbowBoltGlass"/>
+			<property name="Extends" value="ammoCrossbowBoltSteelAP"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab.prefab"/>
+			<property name="EconomicValue" value="57"/>
+			<property name="UnlockedBy" value="perkRangersAPAmmo"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="IsSticky" value="true"/>
+			<property name="StickyOffset" value=".1"/>
+			<property name="StickyColliderUp" value="2"/>
+			<property name="StickyColliderRadius" value=".05"/>
+			<property name="StickyColliderLength" value=".75"/>
+			<effect_group name="ammoCrossbowBoltGlass" tiered="false">
+				<!-- ammoCrossbowBoltSteelAP -->
+				<passive_effect name="EntityDamage" operation="base_set" value="60"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value=".1" tags="wood"/>
+				<passive_effect name="BlockDamage" operation="perc_set" value="0" tags="earth,metal,cloth"/>
+				<passive_effect name="ProjectileVelocity" operation="base_set" value="90"/>
+			</effect_group>
+		</item>
+	</insertBefore>
+	<insertAfter xpath="/items/item[@name='ammoBundleCrossbowBoltSteelAP']">
+		<item name="ammoBundleCrossbowBoltGlass">
+			<property name="Extends" value="ammoBundleCrossbowBoltStone"/>
+			<property name="CustomIcon" value="ammoCrossbowBoltGlass"/>
+			<property name="EconomicValue" value="1140"/>
+			<property class="Action0">
+				<property name="Create_item" value="ammoCrossbowBoltGlass"/>
+			</property>
+		</item>
+	</insertAfter>
+	<append xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowCompositeIronFeather,ammoArrowCompositeIronComposite,ammoArrowGlass</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowCompositeIronFeather,ammoArrowCompositeIronComposite,ammoArrowGlass</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoArrowCompositeIronFeather,ammoArrowCompositeIronComposite,ammoArrowGlass</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltCompositeIronFeather,ammoCrossbowBoltCompositeIronComposite,ammoCrossbowBoltGlass</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammoCrossbowBoltCompositeIronFeather,ammoCrossbowBoltCompositeIronComposite,ammoCrossbowBoltGlass</append>
+</FRK>

@@ -1,0 +1,49 @@
+<FRK>
+	<append xpath="/recipes">
+		<!-- Ammo, 9mm Elemental -->
+		<recipe name="ammo9mmBulletIncendiary" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="50"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="ammo9mmBulletShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo9mmBulletBall" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<!-- Ammo, 7.62mm Elemental -->
+		<recipe name="ammo762mmBulletIncendiary" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="50"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="ammo762mmBulletShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo762mmBulletBall" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<!-- Ammo, .44Magnum Elemental -->
+		<recipe name="ammo44MagnumBulletIncendiary" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="50"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="ammo44MagnumBulletShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammo44MagnumBulletBall" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<!-- Ammo, Shotgun Elemental -->
+		<recipe name="ammoShotgunIncendiary" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoShotgunSlug" count="50"/>
+			<ingredient name="resourceOil" count="1"/>
+		</recipe>
+		<recipe name="ammoShotgunShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoShotgunSlug" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<!-- Ammo, Bows/Xbows Elemental -->
+		<recipe name="ammoArrowShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoArrowSteelAP" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+		<recipe name="ammoCrossbowBoltShock" count="50" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="50"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+		</recipe>
+	</append>
+</FRK>

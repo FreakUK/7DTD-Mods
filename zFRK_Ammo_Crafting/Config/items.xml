@@ -1,0 +1,551 @@
+<FRK>
+	<remove xpath="/items/item[@name='resourceBulletCasing']"/>
+	<remove xpath="/items/item[@name='resourceBulletTip']"/>
+	<append xpath="/items">
+
+		<!-- Ammo Crafting, Primers -->
+		<item name="resourceSPprimer">
+			<!--9mm-->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="CustomIcon" value="resourceSPprimer"/>
+			<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+		</item>
+		<item name="resourceLPprimer">
+			<!--.44mag-->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="CustomIcon" value="resourceLPprimer"/>
+			<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+		</item>
+		<item name="resourceLRprimer">
+			<!--7.62mm-->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="CustomIcon" value="resourceLRprimer"/>
+			<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+		</item>
+		<item name="resourceSGprimer">
+			<!--Shotgun -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="CustomIcon" value="resourceSGprimer"/>
+			<property name="UnlockedBy" value="perkDemolitionsExpert"/>
+		</item>
+		<!-- Ammo Crafting, Steel Tips, 9mm -->
+		<item name="resourceSteelBulletTip9mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip9mmAP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="9mmAPtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip9mmHP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="9mmHPtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<!-- Ammo Crafting, Steel Tips, 7.62mm -->
+		<item name="resourceSteelBulletTip762mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="762tip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip762mmAP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="762APtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip762mmHP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="762HPtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<!-- Ammo Crafting, Steel Tips, 44mag -->
+		<item name="resourceSteelBulletTip44">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="44tip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip44AP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="44APtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletTip44HP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="44HPtip"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<!-- Ammo Crafting, Tips, 9mm -->
+		<item name="resourceBulletTip9mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="resourceBulletTip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip9mmAP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="9mmAPtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip9mmHP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="9mmHPtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<!-- Ammo Crafting, Tips, 7.62mm -->
+		<item name="resourceBulletTip762mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="762tip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip762mmAP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="762APtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip762mmHP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="762HPtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<!-- Ammo Crafting, Tips, 44mag -->
+		<item name="resourceBulletTip44">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="44tip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip44AP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="44APtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletTip44HP">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="44HPtip"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<!-- Ammo Crafting, Shotgun -->
+		<item name="resourceShotgunSlug">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="shotgunSlug"/>
+		</item>
+		<item name="resourceShotgunBreachingSlug">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadSmall"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="shotgunBreachingSlug"/>
+		</item>
+		<item name="resourceShotgunCase">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="shotgunCase"/>
+		</item>
+		<!-- Ammo Crafting, Steel Casings -->
+		<item name="resourceSteelBulletCasing9mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletCasing762mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="762case"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<item name="resourceSteelBulletCasing44">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="44case"/>
+			<property name="CustomIconTint" value="4682B4"/>
+		</item>
+		<!-- Ammo Crafting, Brass Casings -->
+		<item name="resourceBulletCasing9mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapBrassSmall"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="CustomIcon" value="resourceBulletCasing"/>
+			<property name="Group" value="Ammo/Weapons"/>
+		</item>
+		<item name="resourceBulletCasing762mm">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="762case"/>
+		</item>
+		<item name="resourceBulletCasing44">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="1000"/>
+			<property name="EconomicValue" value="20"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="CustomIcon" value="44case"/>
+		</item>
+		<!-- Ammo, 9mm Steel -->
+		<item name="ammo9mmBulletSteel">
+			<property name="Tags" value="ammo"/>
+			<property name="DisplayType" value="ammoBullet"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="MeltTimePerUnit" value=".4"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="ammo9mmBulletSteel"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<effect_group name="ammo9mmBulletSteel" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="50" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="14" tags="perkGunslinger"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo9mmBulletSteelHP">
+			<property name="Extends" value="ammo9mmBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletHP"/>
+			<property name="EconomicValue" value="14"/>
+			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
+			<property name="CustomIcon" value="ammo9mmBulletSteelHP"/>
+			<property name="UnlockedBy" value="perkPistolPeteHPAmmo"/>
+			<effect_group name="ammo9mmBulletHP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo9mmBulletSteelAP">
+			<property name="Extends" value="ammo9mmBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="EconomicValue" value="14"/>
+			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+			<property name="CustomIcon" value="ammo9mmBulletSteelAP"/>
+			<property name="UnlockedBy" value="perkPistolPeteAPAmmo"/>
+			<effect_group name="ammo9mmBulletAP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkGunslinger,9mmGun"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="16" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value="-.2"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkGunslinger"/>
+				<display_value name="dTargetPenetration" value="2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger,9mmGun"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<!-- Ammo, 7.62mm Steel -->
+		<item name="ammo762mmBulletSteel">
+			<property name="Extends" value="ammo9mmBulletSteel"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="ammo762mmBulletSteel"/>
+			<property name="EconomicValue" value="35"/>
+			<effect_group name="ammo762mmBulletSteel" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="75" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="16" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo762mmBulletSteelHP">
+			<property name="Extends" value="ammo762mmBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletHP"/>
+			<property name="EconomicValue" value="16"/>
+			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
+			<property name="CustomIcon" value="ammo762mmBulletSteelHP"/>
+			<property name="UnlockedBy" value="perkSniperHPAmmo"/>
+			<effect_group name="ammo762mmBulletHP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="85" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="4" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="1" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dTargetArmor" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo762mmBulletSteelAP">
+			<property name="Extends" value="ammo762mmBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="EconomicValue" value="16"/>
+			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+			<property name="CustomIcon" value="ammo762mmBulletSteelAP"/>
+			<property name="UnlockedBy" value="perkSniperAPAmmo"/>
+			<effect_group name="ammo762mmBulletAP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="85" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="9" tags="perkDeadEye,perkMachineGunner"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.75" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dTargetArmor" value="-.75"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
+				<display_value name="dTargetPenetration" value="1"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkDeadEye,perkMachineGunner"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<!-- Ammo, .44mag Steel -->
+		<item name="ammo44MagnumBulletSteel">
+			<property name="Extends" value="ammo9mmBulletSteel"/>
+			<property name="EconomicValue" value="45"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletSteel"/>
+			<effect_group name="ammo44MagnumBulletSteel" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="95" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="24" tags="perkGunslinger"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo44MagnumBulletSteelHP">
+			<property name="Extends" value="ammo44MagnumBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletHP"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="DescriptionKey" value="ammoHPGroupDesc"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletSteelHP"/>
+			<property name="UnlockedBy" value="perkEnforcerHPAmmo"/>
+			<effect_group name="ammo44MagnumBulletHP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="105" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value=".9" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value=".9"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkGunslinger">
+					<requirement name="ProgressionLevel" progression_name="perkEnforcerComplete" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+		<item name="ammo44MagnumBulletSteelAP">
+			<property name="Extends" value="ammo44MagnumBulletSteel"/>
+			<property name="DisplayType" value="ammoBulletAP"/>
+			<property name="EconomicValue" value="15"/>
+			<property name="DescriptionKey" value="ammoAPGroupDesc"/>
+			<property name="CustomIcon" value="ammo44MagnumBulletSteelAP"/>
+			<property name="UnlockedBy" value="perkEnforcerAPAmmo"/>
+			<effect_group name="ammo44MagnumBulletAP" tiered="false">
+				<passive_effect name="EntityDamage" operation="base_set" value="105" tags="perkGunslinger,revolver"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="14" tags="perkGunslinger"/>
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.50" tags="perkGunslinger"/>
+				<display_value name="dTargetArmor" value="-.50"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2" tags="perkGunslinger"/>
+				<display_value name="dTargetPenetration" value="2"/>
+				<passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkGunslinger"/>
+				<display_value name="dDegradationPerUse" value=".3"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+			</effect_group>
+		</item>
+	</append>
+	<!-- Add steel rounds to allowed ammunitions -->
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel,ammo9mmBulletSteelHP,ammo9mmBulletSteelAP</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo9mmBulletSteel,ammo9mmBulletSteelHP,ammo9mmBulletSteelAP</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel,ammo44MagnumBulletSteelHP,ammo44MagnumBulletSteelAP</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo44MagnumBulletSteel,ammo44MagnumBulletSteelHP,ammo44MagnumBulletSteelAP</append>
+	<append xpath="/items/item[contains(@name, 'gunRifle')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelAP</append>
+	<append xpath="/items/item[contains(@name, 'gunMGT')]/property[@class='Action0']/property[@name='Magazine_items']/@value">,ammo762mmBulletSteel,ammo762mmBulletSteelHP,ammo762mmBulletSteelAP</append>
+</FRK>

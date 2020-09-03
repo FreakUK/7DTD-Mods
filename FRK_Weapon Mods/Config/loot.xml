@@ -1,0 +1,12 @@
+<FRK>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='modGunCrippleEm']">
+		<item name="modGunShockRounds"/>
+		<item name="modGunElementalRounds"/>
+		<item name="modGunIncendiaryRounds"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='modGunCrippleEmSchematic']">
+		<item name="modGunShockRoundsSchematic"/>
+		<item name="modGunElementalRoundsSchematic"/>
+		<item name="modGunIncendiaryRoundsSchematic"/>
+	</insertAfter>
+</FRK>
