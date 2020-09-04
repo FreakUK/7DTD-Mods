@@ -1,4 +1,11 @@
 <FRK>
+	<!-- Change lootlist for bins, so they don't self-destruct when looted -->
+	<set xpath="/blocks/block[@name='cntBin']/property[@name='LootList']/@value">650</set>
+	<set xpath="/blocks/block[@name='cntBruteStyleTrashCanFull']/property[@name='LootList']/@value">650</set>
+	<set xpath="/blocks/block[@name='cntTiltTruckFull']/property[@name='LootList']/@value">650</set>
+	<set xpath="/blocks/block[@name='cntTiltTruckFullFlies']/property[@name='LootList']/@value">650</set>
+	<!-- Set Birds Nest to be made of plants, rather than wood -->
+	<set xpath="/blocks/block[@name='cntBirdnest']/property[@name='Material']/@value">Mplants</set>
 	<!-- Shelving -->
 	<append xpath="/blocks">
 		<block name="storeShelving01Full">

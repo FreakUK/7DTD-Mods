@@ -1,0 +1,91 @@
+<FRK>
+	<!-- Make Shit Glow -->
+	<append xpath="/items/item[@name='ammoArrowStone']">
+		<property name="StickyMaterial" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltStone']">
+		<property name="StickyMaterial" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltIron']">
+		<property name="StickyMaterial" value="#Entities/Zombies?Zombies/Materials/feral_radiated.mat"/>
+	</append>
+	<!-- 50% Stick chance for all regular arrows and bolts -->
+	<append xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']">
+		<passive_effect name="ProjectileStickChance" operation="perc_set" value="50"/>
+	</append>
+	<!-- Fuel Values -->
+	<set xpath="/items/item[@name='resourceWood']/property[@name='FuelValue']/@value">60</set>
+	<set xpath="/items/item[@name='resourceCoal']/property[@name='FuelValue']/@value">120</set>
+	<!-- Mining helmets have built-in light -->
+	<append xpath="/items/item[@name='armorMiningHelmet']/effect_group[1]">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0,0" localRot="-90,0,0"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightCam"/>
+		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="@!.IsFPV"/>
+		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+	</append>
+	<append xpath="/items/item[@name='armorFirefightersHelmet']/effect_group[1]">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="Entities/Lighting/miningHelmetLightSource" parentTransform="CameraNode" localPos="0,0,0" localRot="-90,0,0"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightCam"/>
+		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="@!.IsFPV"/>
+		<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+		<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+	</append>
+	<!-- Remove Random stats on gear -->
+	<set xpath="/items/item/effect_group/passive_effect[@value='-.2,.2']/@value">.2</set>
+	<set xpath="/items/item/effect_group/passive_effect[@value='-.15,.15']/@value">.15</set>
+	<set xpath="/items/item/effect_group/passive_effect[@value='-.05,.05']/@value">.05</set>
+	<set xpath="/items/item/effect_group/passive_effect[@value='-.122,.122']/@value">.122</set>
+	<set xpath="/items/item/effect_group/passive_effect[@value='-.08,.08']/@value">.08</set>
+	<!-- Level = Mod Slots -->
+	<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots'][@tier='1,2,3,4,5,6']/@value">1,2,3,4,5,6</set>
+	<!-- Zombie Reach Reduction -->
+	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@value='1.65']/@value">1.0</set>
+
+
+	<!-- tool stamina drain -->
+	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+	<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+	<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+	<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+	<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">16</set>
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='StaminaLoss'][@operation='base_set']/@value">24</set>
+
+	<!-- Sellable Vehicles -->
+	<set xpath="/items/item[@name='vehicleMinibikePlaceable']/property[@name='SellableToTrader']/@value">True</set>
+	<!-- Working Hazmat Suit -->
+	<insertAfter xpath="/items/item[contains (@name, 'apparelHazmat')]/effect_group/passive_effect[@name='HyperthermalResist']">
+		<passive_effect name="BuffResistance" operation="base_add" value="0.2" tags="buffRadiation03"/>
+	</insertAfter>
+	<set xpath="/items/item[@name='toolBellows']/property[@name='UnlockedBy']/@value">toolBellowsSchematic,perkAdvancedEngineering</set>
+	<set xpath="/items/item[@name='toolAnvil']/property[@name='UnlockedBy']/@value">toolAnvilSchematic,perkAdvancedEngineering</set>
+	<append xpath="/items/item[@name='toolBeaker']">
+		<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	</append>
+
+	<!-- Make Auger/Chainsaw unlock via AdvEngineering -->
+	<append xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='UnlockedBy']/@value">,perkAdvancedEngineering</append>
+	<append xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='UnlockedBy']/@value">,perkAdvancedEngineering</append>
+
+</FRK>

@@ -170,7 +170,7 @@
 			<property name="LootExpValue" value="1"/>
 			<property name="CraftingIngredientTime" value=".25"/>
 		</item>
-		<item name="resourceArrowHeadSteel">
+		<item name="resourceArrowHeadSteelAP">
 			<property name="HoldType" value="45"/>
 			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>

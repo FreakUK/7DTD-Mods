@@ -1,6 +1,7 @@
 <FRK>
 	<set xpath="windows/window[@name='windowToolsForge']/rect/grid[@name='inventory']/@rows">2</set>
-	<set xpath="windows/window[@name='windowToolsForge']/@height">200</set>
+	<set xpath="windows/window[@name='windowToolsForge']/@height">195</set>
+	<set xpath="windows/window[@name='windowFuel']/@height">158</set>
 	<append xpath="windows/window[@name='windowToolsForge']/rect/grid[@name='inventory']/@required_tools">,toolForgeArrowMold,toolForgeBoltMold</append>
 	<append xpath="/windows">
 		<window name="windowToolsWorkbench" width="228" height="121" panel="Right" cursor_area="true">

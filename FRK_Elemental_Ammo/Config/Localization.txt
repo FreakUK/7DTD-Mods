@@ -1,0 +1,34 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,Context,English,
+
+ammo9mmBulletIncendiary,items,Ammo,,,,"9mm Incendiary Rounds",,
+ammo9mmBulletIncendiaryDesc,items,Ammo,,,,"9mm Incendiary Rounds",,
+ammo9mmBulletShock,items,Ammo,,,,"9mm Shock Rounds",,
+ammo9mmBulletShockDesc,items,Ammo,,,,"9mm Electrical Rounds",,
+
+ammo44MagnumBulletIncendiary,items,Ammo,,,,".44Magnum Incendiary Rounds",,
+ammo44MagnumBulletIncendiaryDesc,items,Ammo,,,,".44Magnum Incendiary Rounds",,
+ammo44MagnumBulletShock,items,Ammo,,,,".44Magnum Shock Rounds",,
+ammo44MagnumBulletShockDesc,items,Ammo,,,,".44Magnum Electrical Rounds",,
+ammo44MagnumBulletHE,items,Ammo,,,,"Explosive .44 magnum Bullet","Стальная .44-мм пуля","Сталева .44-мм куля"
+ammo44MagnumBulletHEDesc,items,Ammo,,,,"Explosive .44 Rounds...","Больше урона чем у его свинцового аналога","Більше шкоди ніж у його свинцевого аналога"
+
+ammo762mmBulletIncendiary,items,Ammo,,,,"7.62mm Incendiary Rounds",,
+ammo762mmBulletIncendiaryDesc,items,Ammo,,,,"7.62mm Incendiary Rounds",,
+ammo762mmBulletShock,items,Ammo,,,,"7.62mm Shock Rounds",,
+ammo762mmBulletShockDesc,items,Ammo,,,,"7.62mm Shock Rounds",,
+
+ammoShotgunIncendiary,items,Ammo,,,,"Shotgun Incendiary Rounds",,
+ammoShotgunIncendiaryDesc,items,Ammo,,,,"Incendiary Shotgun Slugs",,
+ammoShotgunShock,items,Ammo,,,,"Shotgun Shock Rounds",,
+ammoShotgunShockDesc,items,Ammo,,,,"Shocking Shotgun Slugs",,
+
+ammoArrowShock,items,Ammo,,,,"Shock Arrow",,
+ammoArrowShockDesc,items,Ammo,,,,"Electrical Arrows",,
+
+ammoCrossbowBoltShock,items,Ammo,,,,"Shock Bolt",,
+ammoCrossbowBoltShockDesc,items,Ammo,,,,"Electrical Bolts",,
+
+incendiaryRoundSchematic,items,Schematic,,,,"Incendiary Ammo Schematic",,
+incendiaryRoundSchematicDesc,items,Schematic,,,,"Unlocks crafting of incendiary ammo, arrows, and bolts",,
+shockRoundSchematic,items,Schematic,,,,"Shock Ammo Schematic",,
+shockRoundSchematicDesc,items,Schematic,,,,"Unlocks crafting of shock ammo, arrows, and bolts",,

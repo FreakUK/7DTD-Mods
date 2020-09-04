@@ -7,9 +7,15 @@
 	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunShell']"/>
 	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']"/>
 	<remove xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']"/>
-	<remove xpath="/recipes/recipe[contains(@name,'ammo9mm')]"/>
-	<remove xpath="/recipes/recipe[contains(@name,'ammo762mm')]"/>
-	<remove xpath="/recipes/recipe[contains(@name,'ammo44Magnum')]"/>
+	<remove xpath="/recipes/recipe[@name='ammo9mmBulletBall']"/>
+	<remove xpath="/recipes/recipe[@name='ammo9mmBulletHP']"/>
+	<remove xpath="/recipes/recipe[@name='ammo9mmBulletAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammo762mmBulletBall']"/>
+	<remove xpath="/recipes/recipe[@name='ammo762mmBulletHP']"/>
+	<remove xpath="/recipes/recipe[@name='ammo762mmBulletAP']"/>
+	<remove xpath="/recipes/recipe[@name='ammo44MagnumBulletBall']"/>
+	<remove xpath="/recipes/recipe[@name='ammo44MagnumBulletHP']"/>
+	<remove xpath="/recipes/recipe[@name='ammo44MagnumBulletAP']"/>
 	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle9mm')]"/>
 	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle762')]"/>
 	<remove xpath="/recipes/recipe[contains(@name,'ammoBundle44')]"/>

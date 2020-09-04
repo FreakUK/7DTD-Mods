@@ -6,12 +6,13 @@
 			<property name="DisplayType" value="food"/>
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
+			<property name="Material" value="Msugar"/>
+			<property name="Weight" value="1"/>
 			<property name="Stacknumber" value="1000"/>
 			<property name="CustomIcon" value="resourceSugar"/>
 			<property name="EconomicValue" value="250"/>
 			<property name="EconomicBundleSize" value="100"/>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking,Medical"/>
+			<property name="Group" value="frkChemFood"/>
 		</item>
 		<item name="yayCandy">
 			<property name="Extends" value="schematicMaster"/>
@@ -57,6 +58,9 @@
 			</effect_group>
 		</item>
 	</append>
+	<insertAfter xpath="/items/item[@name='drugAtomJunkies']/property[@name='Material']">
+		<property name="Weight" value="50"/>
+	</insertAfter>
 	<append xpath="/items/item[@name='drugAtomJunkies']">
 		<property name="UnlockedBy" value="perkDemolitionsExpert,yayCandy"/>
 	</append>
@@ -90,4 +94,6 @@
 	<append xpath="/items/item[@name='drugSugarButts']">
 		<property name="UnlockedBy" value="perkBetterBarter,yayCandy"/>
 	</append>
+	<append xpath="/items/item[@name='drugAtomJunkies']/property[@name='Group']/@value">,frkChemFood</append>
+	<set xpath="/items/item[@name='drugAtomJunkies']/property[@name='Material']/@value">Msugar</set>
 </FRK>

@@ -21,5 +21,21 @@
 			<ingredient name="resourceInsulator" count="1"/>
 			<ingredient name="resourceNail" count="10"/>
 		</recipe>
+		<!-- adds clay, sand, cement, cobblestone and concrete to the Art of Mining Perk for creating bundles -->
+		<recipe name="resourceConcreteMixBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceConcreteMix" count="6000"/>
+		</recipe>
+		<recipe name="resourceClayLumpBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceClayLump" count="6000"/>
+		</recipe>
+		<recipe name="resourceCrushedSandBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCrushedSand" count="6000"/>
+		</recipe>
+		<recipe name="resourceCobblestonesBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCobblestones" count="6000"/>
+		</recipe>
+		<recipe name="resourceCementBundle" count="1" craft_time="10" tags="learnable">
+			<ingredient name="resourceCement" count="6000"/>
+		</recipe>
 	</append>
 </FRK>

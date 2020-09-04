@@ -1,0 +1,26 @@
+<FRK>
+	<remove xpath="//quest[@id='quest_BasicSurvival6']"/>
+	<insertBefore xpath="//quest[@id='quest_BasicSurvival7']">
+		<quest id="quest_BasicSurvival6">
+			<property name="group_name_key" value="quest_BasicSurvival"/>
+			<property name="name_key" value="quest_BasicSurvival6"/>
+			<property name="subtitle_key" value="quest_BasicSurvival6_subtitle"/>
+			<property name="description_key" value="quest_BasicSurvival6_description"/>
+			<property name="icon" value="ui_game_symbol_archery"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="veryeasy"/>
+			<property name="shareable" value="false"/>
+			<objective type="FetchKeep" id="resourceWood" value="10" phase="1"/>
+			<objective type="FetchKeep" id="resourceYuccaFibers" value="3" phase="1"/>
+			<objective type="FetchKeep" id="resourceFeather" value="1" phase="1"/>
+			<objective type="FetchKeep" id="resourceRockSmall" value="5" phase="1"/>
+			<objective type="Craft" id="resourceArrowShaftWood" value="1" phase="2"/>
+			<objective type="Craft" id="resourceArrowHeadStone" value="1" phase="2"/>
+			<objective type="Craft" id="resourceArrowVaneFeather" value="1" phase="2"/>
+			<objective type="Craft" id="gunBowT0PrimitiveBow" value="1" phase="3"/>
+			<objective type="Craft" id="ammoArrowStone" value="1" phase="3"/>
+			<reward type="Exp" value="50"/>
+			<reward type="Quest" id="quest_BasicSurvival7"/>
+		</quest>
+	</insertBefore>
+</FRK>

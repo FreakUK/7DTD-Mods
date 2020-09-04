@@ -1,117 +1,77 @@
 <FRK>
-<append xpath="/recipes">
-	<recipe name="drugAtomJunkies" craft_time="300" count="5" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="resourceGunPowder" count="100"/>
-	</recipe>
-	<recipe name="drugCovertCats" craft_time="300" count="5" craft_area="chemistryStation" tags="perkFromTheShadows,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="drinkJarRedTea" count="1"/>
-	</recipe>
-	<recipe name="drugEyeKandy" craft_time="300" count="5" craft_area="chemistryStation" tags="perkLuckyLooter,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="resourceMechanicalParts" count="10"/>
-	</recipe>
-	<recipe name="drugHackers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkSalvageOperations,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="ammoGasCan" count="1"/>
-	</recipe>
-	<recipe name="drugHealthBar" craft_time="300" count="5" craft_area="chemistryStation" tags="perkPhysician,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="medicalAloeCream" count="5"/>
-	</recipe>
-	<recipe name="drugJailBreakers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkLockPicking,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="resourceLockPick" count="1"/>
-	</recipe>
-	<recipe name="drugNerdTats" craft_time="300" count="5" craft_area="chemistryStation" tags="perkElectrocutioner,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="resourceElectricParts" count="5"/>
-	</recipe>
-	<recipe name="drugOhShitzDrops" craft_time="300" count="5" craft_area="chemistryStation" tags="perkParkour,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="drugPainkillers" count="2"/>
-	</recipe>
-	<recipe name="drugRockBusters" craft_time="300" count="5" craft_area="chemistryStation" tags="perkMiner69r,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="drinkJarCoffee" count="1"/>
-	</recipe>
-	<recipe name="drugSkullCrushers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkBrawler,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="drugSteroids" count="1"/>
-	</recipe>
-	<recipe name="drugSugarButts" craft_time="300" count="5" craft_area="chemistryStation" tags="perkBetterBarter,learnable,chemStationCrafting">
-		<ingredient name="resourceSugar" count="100"/>
-		<ingredient name="resourceAnimalFat" count="2"/>
-		<ingredient name="casinoCoin" count="10"/>
-	</recipe>
-
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugAtomJunkies" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugCovertCats" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugEyeKandy" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugHackers" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugHealthBar" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugJailBreakers" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugNerdTats" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugOhShitzDrops" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugRockBusters" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugSkullCrushers" count="1"/>
-	</recipe>
-	<recipe name="resourceSugar" craft_time="1" count="10" craft_area="chemistryStation" tags="chemStationCrafting">
-		<ingredient name="drinkJarBoiledWater" count="1"/>
-		<ingredient name="resourceCloth" count="1"/>
-		<ingredient name="drugSugarButts" count="1"/>
-	</recipe>
-	
-</append>
-
+	<insertAfter xpath="/recipes/recipe[@name='resourceBone']">
+		<recipe name="resourceSugar" count="1" tooltip="ttSugar" always_unlocked="true" tags="salvageScrap">
+			<wildcard_forge_category/>
+		</recipe>
+	</insertAfter>
+	<append xpath="/recipes">
+		<!-- Ingredients / Additives -->
+		<recipe name="resourceSugar" count="100" craft_area="chemistryStation" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropCorn" count="10"/>
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="resourceSugar" count="100" craft_area="chemistryStation" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropGraceCorn" count="5"/>
+			<ingredient name="resourceCloth" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drugAtomJunkies" craft_time="300" count="5" craft_area="chemistryStation" tags="perkDemolitionsExpert,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+		</recipe>
+		<recipe name="drugCovertCats" craft_time="300" count="5" craft_area="chemistryStation" tags="perkFromTheShadows,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarRedTea" count="1"/>
+		</recipe>
+		<recipe name="drugEyeKandy" craft_time="300" count="5" craft_area="chemistryStation" tags="perkLuckyLooter,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+		</recipe>
+		<recipe name="drugHackers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkSalvageOperations,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="ammoGasCan" count="1"/>
+		</recipe>
+		<recipe name="drugHealthBar" craft_time="300" count="5" craft_area="chemistryStation" tags="perkPhysician,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="medicalAloeCream" count="5"/>
+		</recipe>
+		<recipe name="drugJailBreakers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkLockPicking,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceLockPick" count="1"/>
+		</recipe>
+		<recipe name="drugNerdTats" craft_time="300" count="5" craft_area="chemistryStation" tags="perkElectrocutioner,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+		</recipe>
+		<recipe name="drugOhShitzDrops" craft_time="300" count="5" craft_area="chemistryStation" tags="perkParkour,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drugPainkillers" count="2"/>
+		</recipe>
+		<recipe name="drugRockBusters" craft_time="300" count="5" craft_area="chemistryStation" tags="perkMiner69r,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drinkJarCoffee" count="1"/>
+		</recipe>
+		<recipe name="drugSkullCrushers" craft_time="300" count="5" craft_area="chemistryStation" tags="perkBrawler,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="drugSteroids" count="1"/>
+		</recipe>
+		<recipe name="drugSugarButts" craft_time="300" count="5" craft_area="chemistryStation" tags="perkBetterBarter,learnable,chemStationCrafting">
+			<ingredient name="resourceSugar" count="100"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="casinoCoin" count="10"/>
+		</recipe>
+	</append>
 </FRK>
