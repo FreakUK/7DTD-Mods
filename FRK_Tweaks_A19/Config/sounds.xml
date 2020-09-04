@@ -1,8 +1,0 @@
-<FRK>
-
-<remove	xpath="/Sounds/SoundDataNode[@name='bullethitstone']"/>
-<remove	xpath="/Sounds/SoundDataNode[@name='bullethitearth']"/>
-<remove	xpath="/Sounds/SoundDataNode[@name='bullethitwood']"/>
-<remove	xpath="/Sounds/SoundDataNode[@name='bullethitmetal']"/>
-
-</FRK>

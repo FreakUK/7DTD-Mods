@@ -1,7 +1,0 @@
-<FRK>
-	<set xpath="/windows/window[@name='windowVehicle']/panel[@name='content']/sprite[@name='backgroundMain']/@width">120%</set>
-	<set xpath="/windows/window[@name='windowVehicle']/panel[@name='content']/sprite[@name='backgroundMain']/@height">100%</set>
-	<set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='queue']/@rows">10</set>
-	<set xpath="/windows/window[@name='windowVehicleStorage']/grid[@name='queue']/@cols">12</set>
-
-</FRK>

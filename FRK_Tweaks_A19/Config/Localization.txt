@@ -1,1 +1,0 @@
-gunBowT0PrimitiveBow,items,Gun,,,Shitty Bow,,
